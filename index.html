@@ -386,8 +386,9 @@ h2.sec-testimonial::before{ content:"💬 "; }
 .feature-list li{ display:flex; gap:10px; margin-bottom:9px; font-size:14px; align-items:flex-start;}
 .feature-list li::before{ content:"✓"; color:var(--green); font-weight:800; flex-shrink:0; }
 
-.usp-list li{ display:flex; gap:10px; margin-bottom:9px; font-size:14px; align-items:flex-start;}
-.usp-list li::before{ content:"★"; color:var(--coral); font-weight:800; flex-shrink:0; }
+.usp-list li{ position:relative; padding-left:24px; margin-bottom:12px; font-size:14px; line-height:1.55; }
+.usp-list li::before{ content:"★"; color:var(--coral); font-weight:800; position:absolute; left:0; top:1px; }
+.usp-list li strong{ color:var(--navy); }
 
 .pricing-box{ background:var(--navy); color:#fff; border-radius:12px; padding:20px 22px; }
 .pricing-box .amount{ font-size:22px; font-weight:800; }

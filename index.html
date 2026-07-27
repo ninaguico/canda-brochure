@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Canda | GreenTech Talent Services</title>
 <link rel="icon" href="https://canda.io/wp-content/uploads/2022/01/cropped-favicon-270x270.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 
 <style>
 /* ============================================================
@@ -635,12 +634,12 @@ body.rearrange-mode .logo-slot .logo-del, body.edit-mode .logo-slot .logo-del{ d
       <div class="nav-item" data-page="results"><span class="dot"></span>Results &amp; Case Studies</div>
       <div class="nav-item" data-page="about"><span class="dot"></span>About Canda</div>
 
-      <div id="addPageBtn">+ New Page</div>
+      
     </div>
 
     <div class="sidebar-footer">
       <div class="cta-book" data-page="book">Work with Canda →</div>
-      <div class="footer-note">canda.io &middot; Create &amp; Adapt Ltd</div>
+      <div class="footer-note">canda.io · Create &amp; Adapt Ltd</div>
     </div>
   </nav>
 
@@ -648,207 +647,116 @@ body.rearrange-mode .logo-slot .logo-del, body.edit-mode .logo-slot .logo-del{ d
   <main class="main">
     <div class="topbar">
       <div class="topbar-left">
-        <button id="backBtn" class="back-btn" type="button" disabled>← Back</button>
+        <button id="backBtn" class="back-btn" type="button" disabled="">← Back</button>
         <div class="topbar-title" id="topbar-title">Overview</div>
       </div>
       <div class="topbar-actions">
-        <span id="saveStatus"></span>
-        <button id="editToggleBtn" class="mode-btn off" type="button">✏️ Edit Text &amp; Links</button>
-        <button id="rearrangeToggleBtn" class="mode-btn off" type="button">🧱 Build Mode</button>
-        <button id="styleToggleBtn" class="mode-btn off" type="button">🎨 Style &amp; Shape</button>
-        <button id="designBtn" class="design-btn" type="button">🖌 Theme &amp; Fonts</button>
-        <button id="downloadMasterBtn" class="reset-btn" type="button">⬇ Download Master (Editable)</button>
-        <button id="downloadBtn" class="download-btn" type="button">⬇ Download Client Copy</button>
-        <button id="resetBtn" class="reset-btn" type="button">↺ Reset All</button>
+        
+        
+        
+        
+        
+        
+        
+        
         <div class="topbar-cta" data-page="book">Work with Canda</div>
       </div>
     </div>
 
     <!-- ============ THEME & FONTS DRAWER ============ -->
-    <div id="designOverlay" class="design-overlay"></div>
-    <div id="designDrawer" class="design-drawer">
-      <div class="design-drawer-head">
-        <h3>Theme &amp; Fonts</h3>
-        <button id="closeDesignBtn" type="button" class="reset-btn" style="padding:6px 10px;">✕</button>
-      </div>
-      <div class="design-drawer-body">
-        <label>Font family
-          <select id="fontSelect">
-            <option value="'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">Figtree (default)</option>
-            <option value="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">Inter</option>
-            <option value="'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">Poppins</option>
-            <option value="Georgia, 'Times New Roman', serif">Georgia (serif)</option>
-            <option value="Arial, Helvetica, sans-serif">Arial</option>
-            <option value="system-ui, -apple-system, sans-serif">System UI</option>
-          </select>
-        </label>
-        <label>Primary (navy / headings) <input type="color" id="colorNavy" value="#030035"></label>
-        <label>Accent (CTAs / highlights) <input type="color" id="colorCoral" value="#FF7282"></label>
-        <label>Secondary accent (checks) <input type="color" id="colorGreen" value="#1FAE6E"></label>
-        <label>Page background <input type="color" id="colorBg" value="#F6F6FB"></label>
-        <label>Card background <input type="color" id="colorCard" value="#FFFFFF"></label>
-        <label>Body text <input type="color" id="colorText" value="#1B1B33"></label>
-        <label>Muted text <input type="color" id="colorTextSoft" value="#5B5D74"></label>
-        <button id="resetDesignBtn" type="button" class="reset-btn" style="width:100%;">Reset theme to default</button>
-      </div>
-    </div>
+    
+    
 
     <!-- ============ ADD-A-SECTION MODAL ============ -->
-    <div id="blockModalOverlay" class="block-modal-overlay">
-      <div class="block-modal">
-        <h3>Add a Section</h3>
-        <div class="block-type-grid">
-          <button type="button" class="block-type-btn" data-block-type="text"><span class="bt-icon">📝</span>Text</button>
-          <button type="button" class="block-type-btn" data-block-type="list"><span class="bt-icon">☑️</span>Bullet List</button>
-          <button type="button" class="block-type-btn" data-block-type="image"><span class="bt-icon">🖼️</span>Image</button>
-          <button type="button" class="block-type-btn" data-block-type="logos"><span class="bt-icon">🏢</span>Client Logos</button>
-          <button type="button" class="block-type-btn" data-block-type="stats"><span class="bt-icon">📊</span>Key Numbers</button>
-          <button type="button" class="block-type-btn" data-block-type="cards"><span class="bt-icon">🗂️</span>Card Grid</button>
-          <button type="button" class="block-type-btn" data-block-type="quote"><span class="bt-icon">💬</span>Testimonial</button>
-          <button type="button" class="block-type-btn" data-block-type="button"><span class="bt-icon">🔘</span>Button / CTA</button>
-        </div>
-        <button type="button" id="blockModalClose" class="reset-btn block-modal-close">Cancel</button>
-      </div>
-    </div>
+    
 
     <div id="pageContent">
     <!-- ===================== HOME ===================== -->
-    <section class="page active" id="home">
-      <div class="hero">
+    <section class="page active" id="home" data-blocks-ready="1"><div class="hero">
         <div class="eyebrow">Talent Architects for GreenTech company builders</div>
         <h1>The best alternative to recruitment agencies for GreenTech builders.</h1>
         <p class="lead">We provide on-demand talent infrastructure and scalable sourcing &amp; recruiter capacity to internal talent teams needing to scale hiring without losing control of their process, brand messaging and budget.</p>
         <div class="hero-stats">
           <div class="hero-stat"><b>87%</b><span>Client ROI goals met since inception</span></div>
-          <div class="hero-stat"><b>&pound;15m</b><span>In documented savings vs. recruitment agencies</span></div>
+          <div class="hero-stat"><b>£15m</b><span>In documented savings vs. recruitment agencies</span></div>
           <div class="hero-stat"><b>65</b><span>Candidate NPS across 5,000+ hires</span></div>
           <div class="hero-stat"><b>B-Corp</b><span>Certified since 2023</span></div>
         </div>
         <div class="hero-actions">
           <div class="btn-primary" data-page="book">Work with Canda</div>
         </div>
-      </div>
-
-      <h2>Sectors We Cover</h2>
-      <p class="lead">GreenTech cuts across every one of these categories — we recruit specialist talent for all of them.</p>
-      <div class="sector-strip">
+      </div><div class="content-block"><h2>Sectors We Cover</h2><p class="lead">GreenTech cuts across every one of these categories — we recruit specialist talent for all of them.</p><div class="sector-strip">
         <div class="sector-badge"><span class="sb-icon">⚡</span><span class="sb-label">Energy</span></div>
         <div class="sector-badge"><span class="sb-icon">🚚</span><span class="sb-label">Transport</span></div>
         <div class="sector-badge"><span class="sb-icon">🌾</span><span class="sb-label">Agriculture</span></div>
         <div class="sector-badge"><span class="sb-icon">🏭</span><span class="sb-label">Industrial</span></div>
         <div class="sector-badge"><span class="sb-icon">🏢</span><span class="sb-label">Built Environment</span></div>
         <div class="sector-badge"><span class="sb-icon">💧</span><span class="sb-label">Water</span></div>
-      </div>
-
-      <h2>Our Passion</h2>
-      <p class="lead">We work with companies and technologies focused on building real, measurable solutions that reduce environmental impact across energy, transport, industrial, water and built environment.</p>
-      <p class="lead">We're a lean high-performance recruitment business. Every hire we make should move a client closer to being a category leader, a candidate closer to their best career move, and Canda closer to being the leading talent partner in the UK GreenTech industry.</p>
-      <div class="expertise-grid">
-        <div class="expertise-card" style="background-image:url('https://images.weserv.nl/?url=canda.io%2Fwp-content%2Fuploads%2F2026%2F04%2F402378d14ed315fdcf1761ed39e5f19978645b32-scaled.jpg&w=640&q=78&output=jpg')"><span class="ec-label">Sustainable Transport</span><button type="button" class="ec-upload" title="Replace image">⬆</button><input type="file" accept="image/*" class="ec-file-input" style="display:none;"></div>
-        <div class="expertise-card" style="background-image:url('https://images.weserv.nl/?url=canda.io%2Fwp-content%2Fuploads%2F2026%2F04%2F305da0033616e53c441b3d1be0f10fa5db961fd8-scaled.jpg&w=640&q=78&output=jpg')"><span class="ec-label">CleanTech</span><button type="button" class="ec-upload" title="Replace image">⬆</button><input type="file" accept="image/*" class="ec-file-input" style="display:none;"></div>
-        <div class="expertise-card" style="background-image:url('https://images.weserv.nl/?url=canda.io%2Fwp-content%2Fuploads%2F2026%2F04%2F351139f25a8e7978fe95c6b4604ee7f2e15fd6c7-scaled.jpg&w=640&q=78&output=jpg')"><span class="ec-label">Clean Energy</span><button type="button" class="ec-upload" title="Replace image">⬆</button><input type="file" accept="image/*" class="ec-file-input" style="display:none;"></div>
-        <div class="expertise-card" style="background-image:url('https://images.weserv.nl/?url=canda.io%2Fwp-content%2Fuploads%2F2026%2F04%2Ff9d81a15504e8f9e40ddbdc97ff5b2d7702ff525-scaled.jpg&w=640&q=78&output=jpg')"><span class="ec-label">Waste &amp; Recycling Tech</span><button type="button" class="ec-upload" title="Replace image">⬆</button><input type="file" accept="image/*" class="ec-file-input" style="display:none;"></div>
-        <div class="expertise-card" style="background-image:url('https://images.weserv.nl/?url=canda.io%2Fwp-content%2Fuploads%2F2026%2F04%2F8bf3ab138aee3e75e107e7443882e02314887c98-scaled.jpg&w=640&q=78&output=jpg')"><span class="ec-label">Sustainable Agriculture</span><button type="button" class="ec-upload" title="Replace image">⬆</button><input type="file" accept="image/*" class="ec-file-input" style="display:none;"></div>
-        <div class="expertise-card" style="background-image:url('https://images.weserv.nl/?url=canda.io%2Fwp-content%2Fuploads%2F2026%2F04%2F609e80f2acc5d9fba4cfca3b81cdd5d3f314f4db-scaled.jpg&w=640&q=78&output=jpg')"><span class="ec-label">ClimateTech</span><button type="button" class="ec-upload" title="Replace image">⬆</button><input type="file" accept="image/*" class="ec-file-input" style="display:none;"></div>
-      </div>
-
-      <h2>The Best Alternative to Recruitment Agencies</h2>
-      <p class="lead">Not a recruitment agency selling CV's to the highest bidder. Not a platform selling seats and giving you more work. A partner who disappears into your team and provides done-for-you recruitment that delivers exceptional hiring outcomes and gives your time back.</p>
-      <ul class="feature-list">
+      </div></div><div class="content-block"><h2>Our Passion</h2><p class="lead">We work with companies and technologies focused on building real, measurable solutions that reduce environmental impact across energy, transport, industrial, water and built environment.</p><p class="lead">We're a lean high-performance recruitment business. Every hire we make should move a client closer to being a category leader, a candidate closer to their best career move, and Canda closer to being the leading talent partner in the UK GreenTech industry.</p><div class="expertise-grid">
+        <div class="expertise-card" style="background-image:url('https://images.weserv.nl/?url=canda.io%2Fwp-content%2Fuploads%2F2026%2F04%2F402378d14ed315fdcf1761ed39e5f19978645b32-scaled.jpg&amp;w=640&amp;q=78&amp;output=jpg')" data-wired="1"><span class="ec-label">Sustainable Transport</span></div>
+        <div class="expertise-card" style="background-image:url('https://images.weserv.nl/?url=canda.io%2Fwp-content%2Fuploads%2F2026%2F04%2F305da0033616e53c441b3d1be0f10fa5db961fd8-scaled.jpg&amp;w=640&amp;q=78&amp;output=jpg')" data-wired="1"><span class="ec-label">CleanTech</span></div>
+        <div class="expertise-card" style="background-image:url('https://images.weserv.nl/?url=canda.io%2Fwp-content%2Fuploads%2F2026%2F04%2F351139f25a8e7978fe95c6b4604ee7f2e15fd6c7-scaled.jpg&amp;w=640&amp;q=78&amp;output=jpg')" data-wired="1"><span class="ec-label">Clean Energy</span></div>
+        <div class="expertise-card" style="background-image:url('https://images.weserv.nl/?url=canda.io%2Fwp-content%2Fuploads%2F2026%2F04%2Ff9d81a15504e8f9e40ddbdc97ff5b2d7702ff525-scaled.jpg&amp;w=640&amp;q=78&amp;output=jpg')" data-wired="1"><span class="ec-label">Waste &amp; Recycling Tech</span></div>
+        <div class="expertise-card" style="background-image:url('https://images.weserv.nl/?url=canda.io%2Fwp-content%2Fuploads%2F2026%2F04%2F8bf3ab138aee3e75e107e7443882e02314887c98-scaled.jpg&amp;w=640&amp;q=78&amp;output=jpg')" data-wired="1"><span class="ec-label">Sustainable Agriculture</span></div>
+        <div class="expertise-card" style="background-image:url('https://images.weserv.nl/?url=canda.io%2Fwp-content%2Fuploads%2F2026%2F04%2F609e80f2acc5d9fba4cfca3b81cdd5d3f314f4db-scaled.jpg&amp;w=640&amp;q=78&amp;output=jpg')" data-wired="1"><span class="ec-label">ClimateTech</span></div>
+      </div></div><div class="content-block"><h2>The Best Alternative to Recruitment Agencies</h2><p class="lead">Not a recruitment agency selling CV's to the highest bidder. Not a platform selling seats and giving you more work. A partner who disappears into your team and provides done-for-you recruitment that delivers exceptional hiring outcomes and gives your time back.</p><ul class="feature-list">
         <li>Keeping it in-house</li>
         <li>1.5x vs. industry benchmarks — consistently above internal benchmarks on time-to-hire and quality</li>
         <li>You own all candidates &amp; data</li>
         <li>Reduce agency fees by 70% — we save you thousands of £ on labour-intensive agency fees</li>
         <li>Scale solutions up or down to meet demand — maintain hiring quality &amp; velocity in times of growth</li>
         <li>Speedy onboarding</li>
-      </ul>
-
-      <h2>The Services We Run For Clients</h2>
-      <p class="lead">We support Talent teams by offering a number of different recruitment models to suit different problem statements and budgets. We are client-led, meaning we work top down to fill all of your positions. Each solution is run by the same team, using the same operational rigour.</p>
-      <div class="service-tiles">
+      </ul></div><div class="content-block"><h2>The Services We Run For Clients</h2><p class="lead">We support Talent teams by offering a number of different recruitment models to suit different problem statements and budgets. We are client-led, meaning we work top down to fill all of your positions. Each solution is run by the same team, using the same operational rigour.</p><div class="service-tiles">
         <div class="tile svc-advisory-tile" data-page="svc-advisory"><div class="tile-top"><span class="tile-icon">🧭</span><span class="tile-num">01</span></div><h3>Talent Advisory</h3><p>Fractional Talent Director support to help solve your most complex hiring challenges.</p></div>
         <div class="tile svc-advertise-tile" data-page="svc-advertise"><div class="tile-top"><span class="tile-icon">📣</span><span class="tile-num">02</span></div><h3>Advertising + Screen</h3><p>We advertise, manage applications, screen and submit qualified talent.</p></div>
         <div class="tile svc-sourcing-tile" data-page="svc-sourcing"><div class="tile-top"><span class="tile-icon">📡</span><span class="tile-num">03</span></div><h3>Sourcing Engine</h3><p>AI-enabled outbound sourcing that delivers qualified leads into your calendar.</p></div>
-        <div class="tile svc-specialist-tile" data-page="svc-specialist"><div class="tile-top"><span class="tile-icon">🚀</span><span class="tile-num">04</span></div><h3>Launch Pad (Direct Recruitment)</h3><p>A fully managed hiring process for 1&ndash;5 critical vacancies, run end-to-end.</p></div>
+        <div class="tile svc-specialist-tile" data-page="svc-specialist"><div class="tile-top"><span class="tile-icon">🚀</span><span class="tile-num">04</span></div><h3>Launch Pad (Direct Recruitment)</h3><p>A fully managed hiring process for 1–5 critical vacancies, run end-to-end.</p></div>
         <div class="tile svc-embedded-tile" data-page="svc-embedded"><div class="tile-top"><span class="tile-icon">🤝</span><span class="tile-num">05</span></div><h3>Embedded Talent Partner</h3><p>A full-lifecycle Talent Partner embedded inside your team, branded as you.</p></div>
         <div class="tile svc-search-tile" data-page="svc-search"><div class="tile-top"><span class="tile-icon">🔍</span><span class="tile-num">06</span></div><h3>Embedded Search Partner</h3><p>Accelerated executive &amp; specialist search process for £100k+ roles.</p></div>
         <div class="tile svc-rpo-tile" data-page="svc-rpo"><div class="tile-top"><span class="tile-icon">⚙️</span><span class="tile-num">07</span></div><h3>Fully Managed RPO</h3><p>A fully outsourced, multi-discipline TA operation for scaling companies.</p></div>
-      </div>
-    </section>
+      </div></div></section>
 
     <!-- ===================== SERVICE: TALENT ADVISORY ===================== -->
-    <section class="page" id="svc-advisory">
-      <div class="service-hero svc-advisory-hero">
+    <section class="page" id="svc-advisory" data-blocks-ready="1"><div class="service-hero svc-advisory-hero">
         <span class="service-hero-icon">🧭</span>
         <h1>Talent Advisory</h1>
-      </div>
-      <p class="lead">On-demand Talent Director providing fractional board-level support to help solve your most complex hiring challenges. Senior, hands-on advisory that helps you understand how to win in your sector — ideal for teams with a talent leadership gap who wish to transform how hiring works, optimise planning cycles, or simply troubleshoot ad-hoc problems.</p>
-
-      <h2 class="sec-usecases">Typical Use Cases</h2>
-      <ul class="usecase-list">
+      </div><p class="lead">On-demand Talent Director providing fractional board-level support to help solve your most complex hiring challenges. Senior, hands-on advisory that helps you understand how to win in your sector — ideal for teams with a talent leadership gap who wish to transform how hiring works, optimise planning cycles, or simply troubleshoot ad-hoc problems.</p><div class="content-block"><h2 class="sec-usecases">Typical Use Cases</h2><ul class="usecase-list">
         <li>Pre- or post-investment talent strategy planning with no in-house TA leadership in place yet.</li>
         <li>Founders and People leads needing a credible outside view on existing strategy and hiring performance vs. market benchmarks.</li>
         <li>Short, defined problem-solving projects (org design, hiring plan, hiring philosophy, comp benchmarking) rather than ongoing delivery.</li>
-      </ul>
-
-      <h2 class="sec-metrics">Key Metrics</h2>
-      <div class="grid grid-3">
+      </ul></div><div class="content-block"><h2 class="sec-metrics">Key Metrics</h2><div class="grid grid-3">
         <div class="card metric-card"><b>86%</b><span>CSAT score for total engagements</span></div>
         <div class="card metric-card"><b>5 Hrs</b><span>Less than 5 hours response time</span></div>
         <div class="card metric-card"><b>90%</b><span>Cheaper than a FT Talent Director</span></div>
-      </div>
-
-      <h2 class="sec-includes">Includes</h2>
-      <ul class="feature-list">
+      </div></div><div class="content-block"><h2 class="sec-includes">Includes</h2><ul class="feature-list">
         <li>Free of charge statement of work scoping</li>
         <li>Remote or in-person support</li>
         <li>Hiring intelligence &amp; research</li>
         <li>Network introductions</li>
         <li>Every engagement concludes with frameworks and strategy your team can run independently</li>
-      </ul>
-
-      <h2 class="sec-usp">What Makes Canda's Advisory Different</h2>
-      <ul class="usp-list">
+      </ul></div><div class="content-block"><h2 class="sec-usp">What Makes Canda's Advisory Different</h2><ul class="usp-list">
         <li><strong>Unique vantage point</strong> — combined learnings of over 200 projects within the global scale-up ecosystem.</li>
         <li><strong>Domain knowledge</strong> — currently running programs for GreenTech clients that give us front-line knowledge of the latest methodologies.</li>
         <li><strong>Access to Canda's IP, data &amp; tooling</strong> — beyond consulting time, powerful resources to support all engagements.</li>
         <li><strong>Quick &amp; easy</strong> — no long discovery process, no long-term commitments, just quick access on an hourly rate to Talent leadership &amp; strategy.</li>
-      </ul>
-
-      <h2 class="sec-pricing">Pricing</h2>
-      <div class="grid grid-2">
+      </ul></div><div class="content-block"><h2 class="sec-pricing">Pricing</h2><div class="grid grid-2">
         <div class="pricing-box"><div class="amount">Hourly Rate</div><div class="desc">Consulting, billed per hour</div></div>
         <div class="pricing-box"><div class="amount">Fixed Price</div><div class="desc">For scoped, defined projects</div></div>
-      </div>
-
-      <h2 class="sec-testimonial">Testimonial</h2>
-      <div class="testimonial">"Our founding team contained no one from a talent background. Louis helped us understand how to approach hiring in our market considering our budget constraints. Are we hiring the right people? Are we doing it fast enough? Do we have the right model? The data he brought to every conversation completely changed how we thought about hiring and building our team."<div class="attrib">Brittany Harris &mdash; CEO @ Qflow</div></div>
-    </section>
+      </div></div><div class="content-block"><h2 class="sec-testimonial">Testimonial</h2><div class="testimonial">"Our founding team contained no one from a talent background. Louis helped us understand how to approach hiring in our market considering our budget constraints. Are we hiring the right people? Are we doing it fast enough? Do we have the right model? The data he brought to every conversation completely changed how we thought about hiring and building our team."<div class="attrib">Brittany Harris — CEO @ Qflow</div></div></div></section>
 
     <!-- ===================== SERVICE: ADVERTISING + SCREEN ===================== -->
-    <section class="page" id="svc-advertise">
-      <div class="service-hero svc-advertise-hero">
+    <section class="page" id="svc-advertise" data-blocks-ready="1"><div class="service-hero svc-advertise-hero">
         <span class="service-hero-icon">📣</span>
         <h1>Advertising + Screen</h1>
-      </div>
-      <p class="lead">We advertise your vacancy, manage the applications that come in, screen candidates against a scoring matrix and submit qualified &amp; interested talent — with daily monitoring so nothing sits still. Our service stack includes premium advertising on all of the major platforms &amp; job boards that generate attention from talent worldwide.</p>
-
-      <h2 class="sec-usecases">Typical Use Cases</h2>
-      <ul class="usecase-list">
+      </div><p class="lead">We advertise your vacancy, manage the applications that come in, screen candidates against a scoring matrix and submit qualified &amp; interested talent — with daily monitoring so nothing sits still. Our service stack includes premium advertising on all of the major platforms &amp; job boards that generate attention from talent worldwide.</p><div class="content-block"><h2 class="sec-usecases">Typical Use Cases</h2><ul class="usecase-list">
         <li>Time-poor teams that want to widely market their openings but can't handle the inbound volume &amp; screening.</li>
         <li>Candidate experience-led teams who don't have time to be responsive to candidate applications.</li>
         <li>Roles with a healthy inbound applicant pool that just need managing, screening, rejecting and high quality submissions.</li>
-      </ul>
-
-      <h2 class="sec-metrics">Key Metrics</h2>
-      <div class="grid grid-3">
+      </ul></div><div class="content-block"><h2 class="sec-metrics">Key Metrics</h2><div class="grid grid-3">
         <div class="card metric-card"><b>40%</b><span>Extra reach vs. self-managed advertising</span></div>
         <div class="card metric-card"><b>15 hrs</b><span>Saved per vacancy</span></div>
         <div class="card metric-card"><b>90%</b><span>Saving vs. agency fees for successful advert campaigns</span></div>
-      </div>
-
-      <h2 class="sec-includes">Includes</h2>
-      <ul class="feature-list">
+      </div></div><div class="content-block"><h2 class="sec-includes">Includes</h2><ul class="feature-list">
         <li>Campaign Manager + Screening Partner</li>
         <li>Advert design &amp; build</li>
         <li>Organic &amp; paid social recruiting</li>
@@ -856,274 +764,153 @@ body.rearrange-mode .logo-slot .logo-del, body.edit-mode .logo-slot .logo-del{ d
         <li>Screening scoring matrix design</li>
         <li>Daily application management</li>
         <li>15-minute recorded screening calls</li>
-      </ul>
-
-      <h2 class="sec-usp">What Makes Canda's Advertising Different</h2>
-      <ul class="usp-list">
+      </ul></div><div class="content-block"><h2 class="sec-usp">What Makes Canda's Advertising Different</h2><ul class="usp-list">
         <li><strong>Sector depth, not generic reach</strong> — we don't post to the same boards as everyone; we tap a live network of specialist talent with people who understand the domain.</li>
         <li><strong>Pre-screened, not just pre-listed</strong> — every candidate submission has been assessed against the screening criteria, cutting down interview-stage drop-off and wasted hiring hours.</li>
         <li><strong>We know what good looks like</strong> — from campaign data to the ideal candidate profile, our domain knowledge can de-risk your advertising spend &amp; save wasted time screening bad candidates.</li>
-      </ul>
-
-      <h2 class="sec-pricing">Pricing</h2>
-      <div class="pricing-box" style="max-width:320px"><div class="amount">From £750</div><div class="desc">Per role, per month</div></div>
-
-      <h2 class="sec-testimonial">Testimonial</h2>
-      <div class="testimonial">"We needed help getting our vacancy in front of the right people and filtering out the noise — Canda delivered on both. They handled the advertising strategy and did the heavy lifting on screening, so by the time candidates reached us, we were only speaking to people who genuinely matched the brief. It saved us a huge amount of time we'd normally lose sifting through unsuitable applications."<div class="attrib">Ketna &mdash; Head of Talent @ UW</div></div>
-    </section>
+      </ul></div><div class="content-block"><h2 class="sec-pricing">Pricing</h2><div class="pricing-box" style="max-width:320px"><div class="amount">From £750</div><div class="desc">Per role, per month</div></div></div><div class="content-block"><h2 class="sec-testimonial">Testimonial</h2><div class="testimonial">"We needed help getting our vacancy in front of the right people and filtering out the noise — Canda delivered on both. They handled the advertising strategy and did the heavy lifting on screening, so by the time candidates reached us, we were only speaking to people who genuinely matched the brief. It saved us a huge amount of time we'd normally lose sifting through unsuitable applications."<div class="attrib">Ketna — Head of Talent @ UW</div></div></div></section>
 
     <!-- ===================== SERVICE: SOURCING ENGINE ===================== -->
-    <section class="page" id="svc-sourcing">
-      <div class="service-hero svc-sourcing-hero">
+    <section class="page" id="svc-sourcing" data-blocks-ready="1"><div class="service-hero svc-sourcing-hero">
         <span class="service-hero-icon">📡</span>
         <h1>Sourcing Engine</h1>
-      </div>
-      <p class="lead">A fully managed outbound sourcing operation built on AI-enabled outreach and run by domain experts in AI/ML, GTM and operations talent profiles. We run multi-channel, multi-step campaigns, handle response triage, and deliver qualified candidates (leads) into your team's calendar. Live talent intelligence is captured from the market throughout every interaction. Every candidate is owned by you for future use.</p>
-
-      <h2 class="sec-usecases">Typical Use Cases</h2>
-      <ul class="usecase-list">
+      </div><p class="lead">A fully managed outbound sourcing operation built on AI-enabled outreach and run by domain experts in AI/ML, GTM and operations talent profiles. We run multi-channel, multi-step campaigns, handle response triage, and deliver qualified candidates (leads) into your team's calendar. Live talent intelligence is captured from the market throughout every interaction. Every candidate is owned by you for future use.</p><div class="content-block"><h2 class="sec-usecases">Typical Use Cases</h2><ul class="usecase-list">
         <li>Time-poor talent teams that don't have time to source — a lack of sourcing creates downstream issues of poor pipeline quality.</li>
         <li>Access to scarce, passive specialist talent that won't come inbound, which matters most in a sector this talent-constrained.</li>
         <li>Extra capacity for hiring surges, with lasting intelligence — an instant sourcing engine that scales hiring without needing to hire more recruiters, plus a reusable map of the talent landscape.</li>
-      </ul>
-
-      <h2 class="sec-metrics">Key Metrics</h2>
-      <div class="grid grid-3">
+      </ul></div><div class="content-block"><h2 class="sec-metrics">Key Metrics</h2><div class="grid grid-3">
         <div class="card metric-card"><b>37%+</b><span>Reply rate vs. a 12% industry average for cold outreach</span></div>
         <div class="card metric-card"><b>17 hrs</b><span>Saved per vacancy</span></div>
         <div class="card metric-card"><b>1 week</b><span>To first pipeline of qualified candidates in your diary</span></div>
-      </div>
-
-      <h2 class="sec-includes">Includes</h2>
-      <ul class="feature-list">
+      </div></div><div class="content-block"><h2 class="sec-includes">Includes</h2><ul class="feature-list">
         <li>Account Manager + Lead Sourcing Partner</li>
         <li>Outreach tools, sourcing platforms &amp; messaging infrastructure</li>
         <li>Map &amp; TAM analysis</li>
         <li>Messaging architecture</li>
         <li>Response triage and calendar scheduling</li>
         <li>Rejection intelligence</li>
-      </ul>
-
-      <h2 class="sec-usp">What Makes Canda's Sourcing Engine Different</h2>
-      <ul class="usp-list">
+      </ul></div><div class="content-block"><h2 class="sec-usp">What Makes Canda's Sourcing Engine Different</h2><ul class="usp-list">
         <li><strong>Enterprise-scale outreach, without the enterprise TA team</strong> — the output of a built-out sourcing function: leads directly in your calendar.</li>
         <li><strong>Your own talent pipeline, not someone else's expensive closed network</strong> — agencies keep their network as their leverage; we hand it to you.</li>
         <li><strong>TalentOps included, with live hiring intelligence</strong> — process design &amp; tooling setup with live talent pool insights (market benchmarks, EVP development, salary data).</li>
-      </ul>
-
-      <h2 class="sec-pricing">Pricing</h2>
-      <div class="pricing-box" style="max-width:400px"><div class="amount">From £2,000</div><div class="desc">Per month, per role, for an agreed number of qualified leads</div></div>
-
-      <h2 class="sec-testimonial">Testimonial</h2>
-      <div class="testimonial">"The specialist talent we need don't apply. Canda's outbound campaigns reached people we'd never have found otherwise, and their response triage meant qualified conversations landed straight in our calendar without us having to chase or filter. 15+ qualified candidates booked into the team's calendar within the first week. The speed &amp; ease was better than anything we'd seen from any other solution."<div class="attrib">Sanjay Bowry &mdash; CFO @ Gravitee.io</div></div>
-    </section>
+      </ul></div><div class="content-block"><h2 class="sec-pricing">Pricing</h2><div class="pricing-box" style="max-width:400px"><div class="amount">From £2,000</div><div class="desc">Per month, per role, for an agreed number of qualified leads</div></div></div><div class="content-block"><h2 class="sec-testimonial">Testimonial</h2><div class="testimonial">"The specialist talent we need don't apply. Canda's outbound campaigns reached people we'd never have found otherwise, and their response triage meant qualified conversations landed straight in our calendar without us having to chase or filter. 15+ qualified candidates booked into the team's calendar within the first week. The speed &amp; ease was better than anything we'd seen from any other solution."<div class="attrib">Sanjay Bowry — CFO @ Gravitee.io</div></div></div></section>
 
     <!-- ===================== SERVICE: LAUNCH PAD (DIRECT RECRUITMENT) ===================== -->
-    <section class="page" id="svc-specialist">
-      <div class="service-hero svc-specialist-hero">
+    <section class="page" id="svc-specialist" data-blocks-ready="1"><div class="service-hero svc-specialist-hero">
         <span class="service-hero-icon">🚀</span>
         <h1>Launch Pad (Direct Recruitment)</h1>
-      </div>
-      <p class="lead">A fully managed hiring process — not a recruitment service. Every opening is run end-to-end, from role scoping to start date, by a dedicated talent partner backed by a specialist sourcing pod. We combine targeted advertising, AI-enabled outbound sourcing, and hands-on stakeholder management into a single accountable process — so instead of a recruiter working a CV pipeline, you get a partner running your hiring project alongside you. Every candidate sourced, every market insight captured, and every relationship built along the way is yours to keep.</p>
-
-      <h2 class="sec-usecases">Typical Use Cases</h2>
-      <ul class="usecase-list">
+      </div><p class="lead">A fully managed hiring process — not a recruitment service. Every opening is run end-to-end, from role scoping to start date, by a dedicated talent partner backed by a specialist sourcing pod. We combine targeted advertising, AI-enabled outbound sourcing, and hands-on stakeholder management into a single accountable process — so instead of a recruiter working a CV pipeline, you get a partner running your hiring project alongside you. Every candidate sourced, every market insight captured, and every relationship built along the way is yours to keep.</p><div class="content-block"><h2 class="sec-usecases">Typical Use Cases</h2><ul class="usecase-list">
         <li>Designed for 1–5 vacancies — this isn't about volume, it's about precision, speed and having no internal capacity to run a process.</li>
         <li>High-stakes single hires where getting it wrong is expensive, with no room for a bad hire and no internal expertise to assess candidates.</li>
         <li>Steady-state hiring for lean, permanently-small teams — never enough volume to justify an internal recruiter, but a recurring need all the same.</li>
-      </ul>
-
-      <h2 class="sec-metrics">Key Metrics</h2>
-      <div class="grid grid-3">
+      </ul></div><div class="content-block"><h2 class="sec-metrics">Key Metrics</h2><div class="grid grid-3">
         <div class="card metric-card"><b>60%</b><span>Cheaper vs. recruitment agencies</span></div>
         <div class="card metric-card"><b>91%</b><span>Of roles filled on time</span></div>
         <div class="card metric-card"><b>82%</b><span>Offer conversion</span></div>
-      </div>
-
-      <h2 class="sec-includes">Includes</h2>
-      <ul class="feature-list">
+      </div></div><div class="content-block"><h2 class="sec-includes">Includes</h2><ul class="feature-list">
         <li>Lead Talent Partner to oversee strategy &amp; performance</li>
         <li>Full market map &amp; TAM analysis</li>
         <li>Premium advertising &amp; Sourcing Engine</li>
         <li>Technology &amp; tooling</li>
         <li>Candidate conversion material (content creation design &amp; build hours)</li>
         <li>Offer management &amp; pre-boarding support</li>
-      </ul>
-
-      <h2 class="sec-usp">What Makes Canda's Launchpad Different</h2>
-      <ul class="usp-list">
+      </ul></div><div class="content-block"><h2 class="sec-usp">What Makes Canda's Launchpad Different</h2><ul class="usp-list">
         <li><strong>One accountable partner, not a transactional pipeline</strong> — dedicated support provides faster movement and a sharper candidate fit.</li>
         <li><strong>Stakeholder management &amp; hiring strategy is built in, not bolted on</strong> — we don't just supply CVs, we own the hiring outcome.</li>
         <li><strong>We make the hires, you keep the playbooks</strong> — engaged candidate pipelines and processes that deliver results now and lasting impact.</li>
-      </ul>
-
-      <h2 class="sec-pricing">Pricing</h2>
-      <div class="pricing-box" style="max-width:420px"><div class="amount">From £1,000</div><div class="desc">Per month, per role, + 9% success fee paid on start date</div></div>
-
-      <h2 class="sec-testimonial">Testimonial</h2>
-      <div class="testimonial">"We didn't want another recruiter working our roles alongside twenty other clients — we wanted someone who actually owned the process and aligned with our hiring philosophy. Our talent partner ran everything end-to-end, from scoping the brief to coordinating our hiring managers to getting candidates over the line. It felt like having an internal hire dedicated to our roles, not an external supplier ticking boxes."<div class="attrib">Paola Tartaglione &mdash; Head of People @ Ecologi</div></div>
-    </section>
+      </ul></div><div class="content-block"><h2 class="sec-pricing">Pricing</h2><div class="pricing-box" style="max-width:420px"><div class="amount">From £1,000</div><div class="desc">Per month, per role, + 9% success fee paid on start date</div></div></div><div class="content-block"><h2 class="sec-testimonial">Testimonial</h2><div class="testimonial">"We didn't want another recruiter working our roles alongside twenty other clients — we wanted someone who actually owned the process and aligned with our hiring philosophy. Our talent partner ran everything end-to-end, from scoping the brief to coordinating our hiring managers to getting candidates over the line. It felt like having an internal hire dedicated to our roles, not an external supplier ticking boxes."<div class="attrib">Paola Tartaglione — Head of People @ Ecologi</div></div></div></section>
 
     <!-- ===================== SERVICE: EMBEDDED TALENT PARTNER ===================== -->
-    <section class="page" id="svc-embedded">
-      <div class="service-hero svc-embedded-hero">
+    <section class="page" id="svc-embedded" data-blocks-ready="1"><div class="service-hero svc-embedded-hero">
         <span class="service-hero-icon">🤝</span>
         <h1>Embedded Talent Partner</h1>
-      </div>
-      <p class="lead">A full-lifecycle Talent Partner with specific domain expertise working inside your team on a fractional or full-time basis — Canda's embedded model covers hiring across all disciplines, inbound and outbound, stakeholder management, branded as you, with guaranteed hires in the first month.</p>
-
-      <h2 class="sec-usecases">Typical Use Cases</h2>
-      <ul class="usecase-list">
+      </div><p class="lead">A full-lifecycle Talent Partner with specific domain expertise working inside your team on a fractional or full-time basis — Canda's embedded model covers hiring across all disciplines, inbound and outbound, stakeholder management, branded as you, with guaranteed hires in the first month.</p><div class="content-block"><h2 class="sec-usecases">Typical Use Cases</h2><ul class="usecase-list">
         <li>5–100+ hires a year, where an in-house model branded as you is more valuable than an outsourced project — fixed, predictable pricing with full control of employer brand, candidate experience, hiring process and budget.</li>
         <li>Covering a TA leadership/IC gap without breaking hiring momentum — an embedded partner slots directly into the vacant seat, keeping stakeholder relationships and processes running under your own brand.</li>
         <li>Multi-discipline hiring surges that outstrip your existing team's bandwidth — the embedded model scales up and down to meet demand.</li>
-      </ul>
-
-      <h2 class="sec-metrics">Key Metrics</h2>
-      <div class="grid grid-3">
+      </ul></div><div class="content-block"><h2 class="sec-metrics">Key Metrics</h2><div class="grid grid-3">
         <div class="card metric-card"><b>1.5x</b><span>12-month retention rate vs. industry benchmarks</span></div>
-        <div class="card metric-card"><b>6&ndash;11%</b><span>Per hire (vs. a 20% agency benchmark)</span></div>
+        <div class="card metric-card"><b>6–11%</b><span>Per hire (vs. a 20% agency benchmark)</span></div>
         <div class="card metric-card"><b>41 days</b><span>Time-to-hire across specialist roles, trending down over the engagement</span></div>
-      </div>
-
-      <h2 class="sec-includes">Includes</h2>
-      <ul class="feature-list">
+      </div></div><div class="content-block"><h2 class="sec-includes">Includes</h2><ul class="feature-list">
         <li>Assigned Talent Director to oversee strategy &amp; performance</li>
         <li>Branded Talent Partner, embedded in your team, culture, ways of working, internal comms and ATS</li>
         <li>Premium Advertising &amp; Sourcing Engine support</li>
         <li>All software licences (see our <a href="https://www.canva.com/design/DAGRB38Zd9U/lfN1JqFxQOYGDJGhAkhFLw/edit" target="_blank" rel="noopener">current tech stack ↗</a>)</li>
         <li>Allocated employer brand / content creation design &amp; build hours</li>
-      </ul>
-
-      <h2 class="sec-usp">What Makes Canda's Embedded Talent Partners Different</h2>
-      <ul class="usp-list">
+      </ul></div><div class="content-block"><h2 class="sec-usp">What Makes Canda's Embedded Talent Partners Different</h2><ul class="usp-list">
         <li><strong>A specialist, not a generalist, placed inside your team</strong> — Canda's partners bring domain fluency in AI/ML, GTM, Engineering, Product and Ops hiring from day one, so there's no ramp-up period spent teaching them your market.</li>
         <li><strong>Backed by an engine, not working solo</strong> — partners are backed by the full sourcing pod, advertising infrastructure, and live talent intelligence behind them, so your one internal relationship is actually powered by a team's worth of capacity.</li>
         <li><strong>Hires &amp; speed are guaranteed, not promised</strong> — Canda guarantees hires within the first month, which removes ambiguity entirely and gives you something concrete to hold the engagement to from day one.</li>
-      </ul>
-
-      <h2 class="sec-pricing">Pricing</h2>
-      <div class="grid grid-3">
+      </ul></div><div class="content-block"><h2 class="sec-pricing">Pricing</h2><div class="grid grid-3">
         <div class="pricing-box"><div class="amount">Fixed Monthly</div><div class="desc">Predictable, single monthly cost</div></div>
         <div class="pricing-box"><div class="amount">Fixed Fees</div><div class="desc">Per-hire fixed fee structure</div></div>
         <div class="pricing-box"><div class="amount">Fixed + Performance</div><div class="desc">Base cost plus performance fees</div></div>
-      </div>
-      <p style="font-size:12.5px;color:var(--text-soft);margin-top:10px;">All pricing can be found here — <a href="https://canda.io/contact/" target="_blank" rel="noopener" style="color:var(--coral-dark);font-weight:700;">get in touch for the full breakdown ↗</a></p>
-
-      <h2 class="sec-testimonial">Testimonial</h2>
-      <div class="testimonial">"What surprised us most was that our Talent Partner wasn't working solo — there was a whole sourcing pod and advertising engine behind them that we never had to manage ourselves. It felt like we'd gained an entire recruiting function, branded as our own, not just one extra person sitting in our team."<div class="attrib">Lauren Brown &mdash; Head of People @ Native</div></div>
-    </section>
+      </div><p style="font-size:12.5px;color:var(--text-soft);margin-top:10px;">All pricing can be found here — <a href="https://canda.io/contact/" target="_blank" rel="noopener" style="color:var(--coral-dark);font-weight:700;">get in touch for the full breakdown ↗</a></p></div><div class="content-block"><h2 class="sec-testimonial">Testimonial</h2><div class="testimonial">"What surprised us most was that our Talent Partner wasn't working solo — there was a whole sourcing pod and advertising engine behind them that we never had to manage ourselves. It felt like we'd gained an entire recruiting function, branded as our own, not just one extra person sitting in our team."<div class="attrib">Lauren Brown — Head of People @ Native</div></div></div></section>
 
     <!-- ===================== SERVICE: EMBEDDED SEARCH PARTNER ===================== -->
-    <section class="page" id="svc-search">
-      <div class="service-hero svc-search-hero">
+    <section class="page" id="svc-search" data-blocks-ready="1"><div class="service-hero svc-search-hero">
         <span class="service-hero-icon">🔍</span>
         <h1>Embedded Search Partner</h1>
-      </div>
-      <p class="lead">A discreet, senior search service for your hardest-to-fill and most business-critical vacancies — led personally by a Head of Search, running a unique sourcing, assessment and selection process built for speed without cutting corners, drawing on live market intelligence and warm relationships with Canda's extensive network, with milestone-based pricing and a replacement guarantee.</p>
-
-      <h2 class="sec-usecases">Typical Use Cases</h2>
-      <ul class="usecase-list">
+      </div><p class="lead">A discreet, senior search service for your hardest-to-fill and most business-critical vacancies — led personally by a Head of Search, running a unique sourcing, assessment and selection process built for speed without cutting corners, drawing on live market intelligence and warm relationships with Canda's extensive network, with milestone-based pricing and a replacement guarantee.</p><div class="content-block"><h2 class="sec-usecases">Typical Use Cases</h2><ul class="usecase-list">
         <li>Confidential succession or replacement of a senior leader — when a Director or Head-of-level exit needs managing quietly, before the team or the market knows a change is coming, discretion isn't a preference, it's risk management.</li>
         <li>First senior leadership hires following a funding round — a visibly struggling search for a first Head of Engineering, Director of Commercial, or similar critical seat risks investor and market confidence at exactly the moment credibility matters most.</li>
         <li>Targeted approaches into a small, named pool of competitor talent — in niche disciplines, the handful of people who've actually done the job often sit inside direct rivals, requiring deep market mapping and quiet, considered engagement.</li>
-      </ul>
-
-      <h2 class="sec-metrics">Key Metrics</h2>
-      <div class="grid grid-4">
+      </ul></div><div class="content-block"><h2 class="sec-metrics">Key Metrics</h2><div class="grid grid-4">
         <div class="card metric-card"><b>82%</b><span>Compliance to 60-day close</span></div>
-        <div class="card metric-card"><b>92%</b><span>12-month retention rate &mdash; 1.5x above industry benchmarks</span></div>
+        <div class="card metric-card"><b>92%</b><span>12-month retention rate — 1.5x above industry benchmarks</span></div>
         <div class="card metric-card"><b>0.87:1</b><span>Shortlist-to-accepted-offer ratio</span></div>
         <div class="card metric-card"><b>21.6 Days</b><span>Time-to-shortlist, 95% sourced via direct, mapped approach</span></div>
-      </div>
-
-      <h2 class="sec-includes">Includes</h2>
-      <ul class="feature-list">
+      </div></div><div class="content-block"><h2 class="sec-includes">Includes</h2><ul class="feature-list">
         <li>Assigned Search Partner (Head of) + research pod</li>
         <li>Role scoping &amp; hiring + compensation strategy consulting</li>
         <li>Market mapping, TAM analysis and sourcing strategy</li>
         <li>All software licences (see our <a href="https://www.canva.com/design/DAGRB38Zd9U/lfN1JqFxQOYGDJGhAkhFLw/edit" target="_blank" rel="noopener">current tech stack ↗</a>)</li>
         <li>Content creation (candidate conversion material)</li>
         <li>Weekly reporting &amp; live talent intelligence</li>
-      </ul>
-
-      <h2 class="sec-usp">What Makes Canda's Search Different</h2>
-      <ul class="usp-list">
+      </ul></div><div class="content-block"><h2 class="sec-usp">What Makes Canda's Search Different</h2><ul class="usp-list">
         <li><strong>An inside advantage no standalone search firm has</strong> — not working externally, embedded directly in your team, driving the process from within, backed by warm network, live market intelligence and an unrivalled understanding of the sector.</li>
-        <li><strong>60-day close opt-in</strong> — for roles where speed matters as much as precision, clients can opt into a mutual 60-day close commitment, well ahead of the 90&ndash;120+ day sector norm, without trading discretion or hiring rigour.</li>
+        <li><strong>60-day close opt-in</strong> — for roles where speed matters as much as precision, clients can opt into a mutual 60-day close commitment, well ahead of the 90–120+ day sector norm, without trading discretion or hiring rigour.</li>
         <li><strong>Expert human judgment with AI labour</strong> — AI sourcing and market mapping widen reach and assess role fit at speed, but company fit is judged by an experienced Head of Search, not a model. Technology extends reach; human judgment decides who's truly right.</li>
-      </ul>
-
-      <h2 class="sec-pricing">Pricing</h2>
-      <div class="pricing-box" style="max-width:460px"><div class="amount">From 12%</div><div class="desc">Of starting salary, paid via 3x milestone-based payments (Mandate → Offer Accept → Start Date)</div></div>
-
-      <h2 class="sec-testimonial">Testimonial</h2>
-      <div class="testimonial">"What set Canda apart from other search firms we've used was how quickly they moved — they run a unique sourcing, assessment and selection process built for speed without cutting corners, drawing on live market intelligence and Canda's network inside the sector. It meant we got from brief to shortlist far faster than we expected for a role this senior."<div class="attrib">Ken Donald &mdash; CEO @ Opus</div></div>
-    </section>
+      </ul></div><div class="content-block"><h2 class="sec-pricing">Pricing</h2><div class="pricing-box" style="max-width:460px"><div class="amount">From 12%</div><div class="desc">Of starting salary, paid via 3x milestone-based payments (Mandate → Offer Accept → Start Date)</div></div></div><div class="content-block"><h2 class="sec-testimonial">Testimonial</h2><div class="testimonial">"What set Canda apart from other search firms we've used was how quickly they moved — they run a unique sourcing, assessment and selection process built for speed without cutting corners, drawing on live market intelligence and Canda's network inside the sector. It meant we got from brief to shortlist far faster than we expected for a role this senior."<div class="attrib">Ken Donald — CEO @ Opus</div></div></div></section>
 
     <!-- ===================== SERVICE: FULLY MANAGED RPO ===================== -->
-    <section class="page" id="svc-rpo">
-      <div class="service-hero svc-rpo-hero">
+    <section class="page" id="svc-rpo" data-blocks-ready="1"><div class="service-hero svc-rpo-hero">
         <span class="service-hero-icon">⚙️</span>
         <h1>Fully Managed RPO</h1>
-      </div>
-      <p class="lead">A fully outsourced multi-discipline Talent Acquisition operation for high-growth companies scaling across every function — a dedicated Canda team runs market research, sourcing, screening and full-cycle hiring end-to-end, flexing up or down with demand, backed by a sourcing engine, shared technology, live market intelligence and transparent reporting, so hiring capacity never becomes the bottleneck to growth.</p>
-
-      <h2 class="sec-usecases">Typical Use Cases</h2>
-      <ul class="usecase-list">
-        <li>Post-funding hiring surges across multiple disciplines — when headcount targets jump to 15&ndash;30+ roles a quarter, RPO gives you instant, scalable capacity across engineering, GTM and ops, without building an internal TA function from scratch.</li>
-        <li>Sustained, high-volume hiring (30&ndash;100+ roles a year) — at this volume, per-hire agency fees compound into a major line item; a dedicated RPO pod becomes a fixed, predictable cost that scales with demand instead of against it.</li>
+      </div><p class="lead">A fully outsourced multi-discipline Talent Acquisition operation for high-growth companies scaling across every function — a dedicated Canda team runs market research, sourcing, screening and full-cycle hiring end-to-end, flexing up or down with demand, backed by a sourcing engine, shared technology, live market intelligence and transparent reporting, so hiring capacity never becomes the bottleneck to growth.</p><div class="content-block"><h2 class="sec-usecases">Typical Use Cases</h2><ul class="usecase-list">
+        <li>Post-funding hiring surges across multiple disciplines — when headcount targets jump to 15–30+ roles a quarter, RPO gives you instant, scalable capacity across engineering, GTM and ops, without building an internal TA function from scratch.</li>
+        <li>Sustained, high-volume hiring (30–100+ roles a year) — at this volume, per-hire agency fees compound into a major line item; a dedicated RPO pod becomes a fixed, predictable cost that scales with demand instead of against it.</li>
         <li>New market or product-line launches needing hiring at pace — entering a new region or standing up a new function requires simultaneous mapping, sourcing and screening across roles you've never hired for before; RPO covers the full spread without managing multiple vendors.</li>
-      </ul>
-
-      <h2 class="sec-metrics">Key Metrics</h2>
-      <div class="grid grid-3">
-        <div class="card metric-card"><b>94%</b><span>Of roles filled within agreed SLA &mdash; velocity matched to headcount targets, not the reverse</span></div>
+      </ul></div><div class="content-block"><h2 class="sec-metrics">Key Metrics</h2><div class="grid grid-3">
+        <div class="card metric-card"><b>94%</b><span>Of roles filled within agreed SLA — velocity matched to headcount targets, not the reverse</span></div>
         <div class="card metric-card"><b>55%</b><span>Average reduction in cost-per-hire vs. prior agency spend, at higher quality-of-hire</span></div>
-        <div class="card metric-card"><b>83%</b><span>12-month retention rate across all RPO-sourced hires &mdash; consistent quality, even at volume</span></div>
-      </div>
-
-      <h2 class="sec-includes">Includes</h2>
-      <ul class="feature-list">
+        <div class="card metric-card"><b>83%</b><span>12-month retention rate across all RPO-sourced hires — consistent quality, even at volume</span></div>
+      </div></div><div class="content-block"><h2 class="sec-includes">Includes</h2><ul class="feature-list">
         <li>Dedicated RPO pod (Talent Partners, sourcing pod, coordinators) sized to your volume</li>
         <li>Full-cycle ownership: market sizing, advertising, sourcing, screening, interview coordination, offer management</li>
         <li>Workforce planning &amp; hiring forecast consulting</li>
         <li>All software licences (see our <a href="https://www.canva.com/design/DAGRB38Zd9U/lfN1JqFxQOYGDJGhAkhFLw/edit" target="_blank" rel="noopener">current tech stack ↗</a>)</li>
         <li>Content creation (job ads, candidate conversion material, employer brand assets)</li>
         <li>Weekly reporting &amp; live talent intelligence dashboard</li>
-      </ul>
-
-      <h2 class="sec-usp">What Makes Canda's RPO Different</h2>
-      <ul class="usp-list">
+      </ul></div><div class="content-block"><h2 class="sec-usp">What Makes Canda's RPO Different</h2><ul class="usp-list">
         <li><strong>A pod, not a single point of failure</strong> — hiring doesn't rest on one recruiter's capacity; a full pod flexes with volume, so peaks never become bottlenecks and knowledge never walks out the door with one person.</li>
         <li><strong>Flex up or down with real demand</strong> — most RPO contracts lock you into fixed capacity regardless of hiring volume; Canda's pod scales month to month with your actual pipeline, so you're never overpaying for idle capacity or under-resourced at peak.</li>
         <li><strong>One integrated engine, not stitched-together vendors</strong> — advertising, sourcing, screening and reporting run through a single Canda-built engine and team, not multiple disconnected suppliers you have to manage and reconcile yourself.</li>
-      </ul>
-
-      <h2 class="sec-pricing">Pricing</h2>
-      <div class="grid grid-3">
+      </ul></div><div class="content-block"><h2 class="sec-pricing">Pricing</h2><div class="grid grid-3">
         <div class="pricing-box"><div class="amount">Fixed Monthly</div><div class="desc">Scaled to pod size and hiring volume, reviewed quarterly against agreed SLAs and hiring targets</div></div>
         <div class="pricing-box"><div class="amount">Retainer + Performance</div><div class="desc">Monthly retainer plus performance fees</div></div>
         <div class="pricing-box"><div class="amount">Volume + Fixed Fees</div><div class="desc">Minimum hiring volume plus fixed fees</div></div>
-      </div>
-
-      <h2 class="sec-testimonial">Testimonial</h2>
-      <div class="testimonial">"Before Canda, every new hiring surge meant scrambling to add agency relationships just to keep pace. Their pod scaled with us instead — same team, same process, whether we had 5 roles open or 40. It's the first time hiring has felt like a function we run, not a fire we're constantly fighting."<div class="attrib">Ketna &mdash; Head of Talent @ UW</div></div>
-    </section>
+      </div></div><div class="content-block"><h2 class="sec-testimonial">Testimonial</h2><div class="testimonial">"Before Canda, every new hiring surge meant scrambling to add agency relationships just to keep pace. Their pod scaled with us instead — same team, same process, whether we had 5 roles open or 40. It's the first time hiring has felt like a function we run, not a fire we're constantly fighting."<div class="attrib">Ketna — Head of Talent @ UW</div></div></div></section>
 
     <!-- ===================== RESULTS ===================== -->
-    <section class="page" id="results">
-      <div class="eyebrow">Proof, Not Promises</div>
-      <h1>Results &amp; Case Studies</h1>
-      <p class="lead">A sample of the GreenTech and impact-led companies we've helped build their teams.</p>
-
-      <div class="grid grid-3" style="margin-top:20px;">
+    <section class="page" id="results" data-blocks-ready="1"><div class="eyebrow">Proof, Not Promises</div><h1>Results &amp; Case Studies</h1><p class="lead">A sample of the GreenTech and impact-led companies we've helped build their teams.</p><div class="grid grid-3" style="margin-top:20px;">
         <div class="card case-card">
           <div class="cc-body">
             <div class="cc-tag">Construction / Carbon Data</div>
             <h3>Qflow</h3>
             <p style="font-size:13.5px;color:var(--text-soft)">The on-site truth captured in seconds: a construction materials, waste and carbon data platform.</p>
-            <div class="testimonial" style="font-size:13px;margin:12px 0;">"Our founding team contained no one from a talent background. Louis helped us understand how to approach hiring in our market considering our budget constraints. The data he brought to every conversation completely changed how we thought about hiring and building our team."<div class="attrib" style="font-size:12.5px;">Brittany Harris &mdash; CEO @ Qflow</div></div>
+            <div class="testimonial" style="font-size:13px;margin:12px 0;">"Our founding team contained no one from a talent background. Louis helped us understand how to approach hiring in our market considering our budget constraints. The data he brought to every conversation completely changed how we thought about hiring and building our team."<div class="attrib" style="font-size:12.5px;">Brittany Harris — CEO @ Qflow</div></div>
             <a class="case-link" href="https://canda.io/success-stories/qflow/" target="_blank" rel="noopener">Read full case study ↗</a>
           </div>
         </div>
@@ -1132,7 +919,7 @@ body.rearrange-mode .logo-slot .logo-del, body.edit-mode .logo-slot .logo-del{ d
             <div class="cc-tag">Consumer / Utilities</div>
             <h3>Utility Warehouse</h3>
             <p style="font-size:13.5px;color:var(--text-soft)">Helping people stop wasting time and money.</p>
-            <div class="testimonial" style="font-size:13px;margin:12px 0;">"We needed help getting our vacancy in front of the right people and filtering out the noise — Canda delivered on both. It saved us a huge amount of time we'd normally lose sifting through unsuitable applications."<div class="attrib" style="font-size:12.5px;">Ketna &mdash; Head of Talent @ UW</div></div>
+            <div class="testimonial" style="font-size:13px;margin:12px 0;">"We needed help getting our vacancy in front of the right people and filtering out the noise — Canda delivered on both. It saved us a huge amount of time we'd normally lose sifting through unsuitable applications."<div class="attrib" style="font-size:12.5px;">Ketna — Head of Talent @ UW</div></div>
             <a class="case-link" href="https://canda.io/success-stories/utility-warehouse/" target="_blank" rel="noopener">Read full case study ↗</a>
           </div>
         </div>
@@ -1141,923 +928,73 @@ body.rearrange-mode .logo-slot .logo-del, body.edit-mode .logo-slot .logo-del{ d
             <div class="cc-tag">Climate Action</div>
             <h3>Ecologi</h3>
             <p style="font-size:13.5px;color:var(--text-soft)">Climate action at your fingertips.</p>
-            <div class="testimonial" style="font-size:13px;margin:12px 0;">"We didn't want another recruiter working our roles alongside twenty other clients — we wanted someone who actually owned the process. It felt like having an internal hire dedicated to our roles, not an external supplier ticking boxes."<div class="attrib" style="font-size:12.5px;">Paola Tartaglione &mdash; Head of People @ Ecologi</div></div>
+            <div class="testimonial" style="font-size:13px;margin:12px 0;">"We didn't want another recruiter working our roles alongside twenty other clients — we wanted someone who actually owned the process. It felt like having an internal hire dedicated to our roles, not an external supplier ticking boxes."<div class="attrib" style="font-size:12.5px;">Paola Tartaglione — Head of People @ Ecologi</div></div>
             <a class="case-link" href="https://canda.io/success-stories/ecologi/" target="_blank" rel="noopener">Read full case study ↗</a>
           </div>
         </div>
-      </div>
-
-      <h2>Headline Numbers</h2>
-      <div class="headline-band">
+      </div><div class="content-block"><h2>Headline Numbers</h2><div class="headline-band">
         <div class="headline-stat hs-1"><b>6.2</b><span>Average hires per customer per month</span></div>
         <div class="headline-stat hs-2"><b>111</b><span>Most hires per customer in a 12-month period</span></div>
         <div class="headline-stat hs-3"><b>5.6</b><span>Interview : Hire ratio</span></div>
         <div class="headline-stat hs-4"><b>46k</b><span>Average monthly cost saving (£)</span></div>
-      </div>
-    </section>
+      </div></div></section>
 
     <!-- ===================== ABOUT ===================== -->
-    <section class="page" id="about">
-      <div class="eyebrow">Who We Are</div>
-      <h1>About Canda</h1>
-      <p class="lead">Canda is a talent partner for UK GreenTech builders — Energy, Transport, Agriculture, Industrial, Built Environment and Water. We provide on-demand talent infrastructure so ambitious companies can build the strongest, fastest, most agile workforce in their category, without the overhead of a traditional agency.</p>
-      <p class="lead">We're a lean, fully remote team that blends embedded human expertise with AI-enabled sourcing — done-for-you recruitment made possible by expert human judgement and AI labour. Not a recruitment agency selling CVs. Not a platform selling seats. A partner who disappears into your team.</p>
-
-      <div class="grid grid-3" style="margin-top:10px;">
+    <section class="page" id="about" data-blocks-ready="1"><div class="eyebrow">Who We Are</div><h1>About Canda</h1><p class="lead">Canda is a talent partner for UK GreenTech builders — Energy, Transport, Agriculture, Industrial, Built Environment and Water. We provide on-demand talent infrastructure so ambitious companies can build the strongest, fastest, most agile workforce in their category, without the overhead of a traditional agency.</p><p class="lead">We're a lean, fully remote team that blends embedded human expertise with AI-enabled sourcing — done-for-you recruitment made possible by expert human judgement and AI labour. Not a recruitment agency selling CVs. Not a platform selling seats. A partner who disappears into your team.</p><div class="grid grid-3" style="margin-top:10px;">
         <div class="card"><h3>B Corp Certified</h3><p style="font-size:13.5px;color:var(--text-soft)">Certified in 2023, recognising our commitment to verified social &amp; environmental performance and legal accountability.</p></div>
         <div class="card"><h3>Employee Owned</h3><p style="font-size:13.5px;color:var(--text-soft)">20%+ employee owned, with a robust financial plan facilitated for every team member.</p></div>
         <div class="card"><h3>Global Reach</h3><p style="font-size:13.5px;color:var(--text-soft)">Connecting talent &amp; opportunity across the UK, Europe, the Middle East and the US.</p></div>
-      </div>
-
-      <h2>Our Values: PACE</h2>
-      <div class="pace-grid">
+      </div><div class="content-block"><h2>Our Values: PACE</h2><div class="pace-grid">
         <div class="card"><div class="pace-letter">P</div><h3>Passion</h3><p style="font-size:13.5px;color:var(--text-soft)">Bring energy and heart to every conversation — high EQ, low ego, low drama.</p></div>
         <div class="card"><div class="pace-letter">A</div><h3>Accountability</h3><p style="font-size:13.5px;color:var(--text-soft)">Own the placement, own the outcome. Grit, rigour, no shortcuts.</p></div>
         <div class="card"><div class="pace-letter">C</div><h3>Consistency</h3><p style="font-size:13.5px;color:var(--text-soft)">Be the recruiter people can set their watch by — reliable, fair, trustworthy.</p></div>
         <div class="card"><div class="pace-letter">E</div><h3>Evolve</h3><p style="font-size:13.5px;color:var(--text-soft)">Stay ahead of a market that never stands still — bias for action.</p></div>
-      </div>
-    </section>
+      </div></div></section>
 
     <!-- ===================== BOOK A CALL ===================== -->
-    <section class="page" id="book">
-      <div class="card book-hero">
+    <section class="page" id="book" data-blocks-ready="1"><div class="card book-hero">
         <div class="eyebrow">Let's Talk</div>
         <h1>Ready to build your GreenTech team?</h1>
         <p class="lead">Book 30 minutes with Canda to talk through your hiring plan, current bottlenecks, and which service line fits best.</p>
         <a class="btn-primary" style="display:inline-block" href="https://canda.io/contact/" target="_blank" rel="noopener">Work with Canda on canda.io →</a>
-      </div>
-    </section>
+      </div></section>
     </div><!-- /#pageContent -->
 
     <footer class="brand-footer">Canda — Trading division of Create &amp; Adapt Ltd. Company registered in England &amp; Wales, No. 9723247.</footer>
   </main>
 </div>
 
-<script>
-(function(){
-  var CONTENT_KEY = 'canda-brochure-content-v4';
-  var NAV_KEY     = 'canda-brochure-nav-v4';
-  var DESIGN_KEY  = 'canda-brochure-design-v2';
-
-  var editing = false, rearranging = false, styling = false;
+<script>(function(){
   var pageStack = [];
-  var saveTimer;
-  var pageContent, navScroll, saveStatus;
-  var editBtn, rearrangeBtn, styleBtn;
-  var showPageRef = null;
-
-  var RELATIVE_EDITABLE_SELECTOR = [
-    'h1','h2','h3','p','li','a[href]','.badge','.amount','.desc','.tile-num','.ph','.cc-tag',
-    '.hero-stat b','.hero-stat span','.metric-card b','.metric-card span','.pace-letter','.eyebrow','.ec-label','.headline-stat b','.headline-stat span'
-  ].join(', ');
-  var EDITABLE_SELECTOR = RELATIVE_EDITABLE_SELECTOR.split(', ').map(function(s){ return '#pageContent ' + s; }).join(', ');
-
-  var DESIGN_FIELDS = {
-    colorNavy: '--navy', colorCoral: '--coral', colorGreen: '--green',
-    colorBg: '--bg', colorCard: '--card', colorText: '--text', colorTextSoft: '--text-soft'
-  };
-
-  function escapeHtml(str){
-    return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  var pages = document.querySelectorAll('#pageContent > .page');
+  var topbarTitle = document.getElementById('topbar-title');
+  var backBtn = document.getElementById('backBtn');
+  var titleMap = {};
+  document.querySelectorAll('.sidebar .nav-item').forEach(function(el){
+    var t=''; el.childNodes.forEach(function(n){ if(n.nodeType===3) t+=n.textContent; });
+    titleMap[el.getAttribute('data-page')] = t.trim();
+  });
+  titleMap['book']='Work with Canda';
+  var currentId='home';
+  function showPage(id, opts){
+    opts=opts||{};
+    if(!document.getElementById(id)) return;
+    if(!opts.skipStack && id!==currentId){ pageStack.push(currentId); if(backBtn) backBtn.disabled=false; }
+    currentId=id;
+    pages.forEach(function(p){ p.classList.toggle('active', p.id===id); });
+    document.querySelectorAll('.sidebar .nav-item').forEach(function(el){ el.classList.toggle('active', el.getAttribute('data-page')===id); });
+    if(titleMap[id] && topbarTitle) topbarTitle.textContent=titleMap[id];
+    window.scrollTo({top:0, behavior:'instant'});
+    if(history.pushState) history.pushState(null,'','#'+id);
   }
-  function getNavLabel(el){
-    var t = '';
-    el.childNodes.forEach(function(n){ if (n.nodeType === 3) t += n.textContent; });
-    return t.trim();
-  }
-  function applyEditableAttr(scopeEl){
-    if (!editing) return;
-    scopeEl.querySelectorAll(RELATIVE_EDITABLE_SELECTOR).forEach(function(el){ el.setAttribute('contenteditable','true'); });
-    if (scopeEl.matches && scopeEl.matches(RELATIVE_EDITABLE_SELECTOR)) scopeEl.setAttribute('contenteditable','true');
-  }
+  document.querySelectorAll('[data-page]').forEach(function(el){
+    el.addEventListener('click', function(){ showPage(el.getAttribute('data-page')); });
+  });
+  if(backBtn) backBtn.addEventListener('click', function(){ if(pageStack.length){ var p=pageStack.pop(); showPage(p,{skipStack:true}); backBtn.disabled = pageStack.length===0; } });
+  window.addEventListener('popstate', function(){ var id=(location.hash||'').replace('#',''); if(id && document.getElementById(id)) showPage(id,{skipStack:true}); });
+  var initial=(location.hash||'').replace('#','');
+  if(initial && document.getElementById(initial) && initial!=='home') showPage(initial,{skipStack:true});
+})();</script>
 
-  /* ================= restore saved state ================= */
-  function restoreContent(){
-    try{ var s = localStorage.getItem(CONTENT_KEY); if (s) pageContent.innerHTML = s; }catch(e){}
-  }
-  function restoreNav(){
-    try{ var s = localStorage.getItem(NAV_KEY); if (s) navScroll.innerHTML = s; }catch(e){}
-  }
-  function darken(hex, amt){
-    var num = parseInt(hex.replace('#',''),16);
-    var r = Math.max(0,(num>>16)-amt), g = Math.max(0,((num>>8)&0xff)-amt), b = Math.max(0,(num&0xff)-amt);
-    return '#'+((1<<24)+(r<<16)+(g<<8)+b).toString(16).slice(1);
-  }
-  function ensureFontLoaded(fontValue){
-    if (fontValue.indexOf('Inter') !== -1 && !document.getElementById('gf-inter')){
-      var l=document.createElement('link'); l.id='gf-inter'; l.rel='stylesheet';
-      l.href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap';
-      document.head.appendChild(l);
-    }
-    if (fontValue.indexOf('Poppins') !== -1 && !document.getElementById('gf-poppins')){
-      var l2=document.createElement('link'); l2.id='gf-poppins'; l2.rel='stylesheet';
-      l2.href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap';
-      document.head.appendChild(l2);
-    }
-  }
-  function applyDesign(data){
-    var root = document.documentElement;
-    Object.keys(DESIGN_FIELDS).forEach(function(id){
-      if (data[id]){
-        root.style.setProperty(DESIGN_FIELDS[id], data[id]);
-        var input = document.getElementById(id);
-        if (input) input.value = data[id];
-      }
-    });
-    if (data.colorCoral) root.style.setProperty('--coral-dark', darken(data.colorCoral, 25));
-    if (data.font){
-      root.style.setProperty('--font', data.font);
-      var sel = document.getElementById('fontSelect');
-      if (sel) sel.value = data.font;
-      ensureFontLoaded(data.font);
-    }
-  }
-  function restoreDesign(){
-    try{ var s = localStorage.getItem(DESIGN_KEY); if (s) applyDesign(JSON.parse(s)); }catch(e){}
-  }
-  function saveDesign(){
-    try{
-      var data = { font: document.getElementById('fontSelect').value };
-      Object.keys(DESIGN_FIELDS).forEach(function(id){ data[id] = document.getElementById(id).value; });
-      localStorage.setItem(DESIGN_KEY, JSON.stringify(data));
-    }catch(e){}
-  }
 
-  /* ================= autosave (content + nav) ================= */
-  function scheduleSave(){
-    clearTimeout(saveTimer);
-    saveStatus.textContent = 'Saving…';
-    saveTimer = setTimeout(function(){
-      try{
-        localStorage.setItem(CONTENT_KEY, pageContent.innerHTML);
-        saveStatus.textContent = 'Saved ✓';
-        setTimeout(function(){ saveStatus.textContent = ''; }, 1500);
-      }catch(e){ saveStatus.textContent = ''; }
-    }, 500);
-  }
-  function scheduleSaveNav(){
-    try{ localStorage.setItem(NAV_KEY, navScroll.innerHTML); }catch(e){}
-  }
-
-  /* ================= turn placeholder into a normal editable block ================= */
-  function activatePlaceholder(el){
-    if (!el.classList.contains('ph')) return;
-    el.querySelectorAll('.ph-tag').forEach(function(t){ t.remove(); });
-    el.classList.remove('ph');
-    el.classList.add('filled');
-    var range = document.createRange();
-    range.selectNodeContents(el);
-    var sel = window.getSelection();
-    sel.removeAllRanges();
-    sel.addRange(range);
-  }
-
-  /* ================= wrap each H2 + its content into a movable block ================= */
-  function blockControlsHTML(){
-    return '<button type="button" class="move-up" title="Move block up">▲</button>'
-         + '<button type="button" class="move-down" title="Move block down">▼</button>'
-         + '<button type="button" class="del-block" title="Delete this section">🗑</button>';
-  }
-  function ensureBlocks(){
-    document.querySelectorAll('#pageContent > .page').forEach(function(page){
-      if (page.getAttribute('data-blocks-ready') === '1') return;
-      var children = Array.from(page.children);
-      var frag = document.createDocumentFragment();
-      var currentBlock = null;
-      children.forEach(function(el){
-        if (el.tagName === 'H2'){
-          currentBlock = document.createElement('div');
-          currentBlock.className = 'content-block';
-          var controls = document.createElement('div');
-          controls.className = 'block-controls';
-          controls.innerHTML = blockControlsHTML();
-          currentBlock.appendChild(controls);
-          frag.appendChild(currentBlock);
-          currentBlock.appendChild(el);
-        } else if (currentBlock){
-          currentBlock.appendChild(el);
-        } else {
-          frag.appendChild(el);
-        }
-      });
-      page.innerHTML = '';
-      page.appendChild(frag);
-      page.setAttribute('data-blocks-ready', '1');
-    });
-  }
-  function ensureAddBars(){
-    document.querySelectorAll('#pageContent > .page').forEach(function(page){
-      if (page.querySelector(':scope > .add-block-bar')) return;
-      var bar = document.createElement('div');
-      bar.className = 'add-block-bar';
-      bar.innerHTML = '<button type="button" class="add-block-btn">+ Add Section</button>';
-      page.appendChild(bar);
-    });
-  }
-  function moveBlock(block, dir){
-    var parent = block.parentElement;
-    if (dir === 'up'){
-      var prev = block.previousElementSibling;
-      if (prev && prev.classList.contains('content-block')) parent.insertBefore(block, prev);
-    } else {
-      var next = block.nextElementSibling;
-      if (next && next.classList.contains('content-block')) parent.insertBefore(next, block);
-    }
-    scheduleSave();
-  }
-
-  /* ================= link (href) editing icons ================= */
-  function addLinkIcons(scope){
-    (scope || document).querySelectorAll('a[href]').forEach(function(a){
-      if (!a.closest('#pageContent')) return;
-      var next = a.nextElementSibling;
-      if (next && next.classList.contains('link-edit-icon')) return;
-      var icon = document.createElement('span');
-      icon.className = 'link-edit-icon';
-      icon.title = 'Edit link URL';
-      icon.textContent = '🔗';
-      a.insertAdjacentElement('afterend', icon);
-    });
-  }
-
-  /* ================= keep the Service Lines numbered badges in sync with actual order ================= */
-  function renumberServiceLines(){
-    var container = document.querySelector('.nav-scroll');
-    if (!container) return;
-    var counting = false, n = 0;
-    Array.from(container.children).forEach(function(el){
-      if (el.classList && el.classList.contains('nav-section-label')){
-        counting = el.textContent.trim() === 'Service Lines';
-        return;
-      }
-      if (el.id === 'addPageBtn'){ counting = false; return; }
-      if (counting && el.classList && el.classList.contains('nav-item')){
-        n++;
-        var badge = el.querySelector('.num-badge');
-        if (badge) badge.textContent = n;
-      }
-    });
-  }
-
-  /* ================= nav reorder + delete buttons ================= */
-  function addNavMoveButtons(){
-    document.querySelectorAll('.nav-scroll .nav-item').forEach(function(item){
-      if (item.querySelector('.nav-move-btns')) return;
-      var mv = document.createElement('span');
-      mv.className = 'nav-move-btns';
-      mv.innerHTML = '<button type="button" class="nav-up" title="Move up">▲</button><button type="button" class="nav-down" title="Move down">▼</button><button type="button" class="nav-del" title="Delete this page">🗑</button>';
-      item.appendChild(mv);
-      mv.querySelector('.nav-up').addEventListener('click', function(e){
-        e.preventDefault(); e.stopPropagation();
-        if (!rearranging) return;
-        var sib = item.previousElementSibling;
-        if (sib && sib.classList.contains('nav-item')){ item.parentElement.insertBefore(item, sib); renumberServiceLines(); scheduleSaveNav(); }
-      });
-      mv.querySelector('.nav-down').addEventListener('click', function(e){
-        e.preventDefault(); e.stopPropagation();
-        if (!rearranging) return;
-        var sib = item.nextElementSibling;
-        if (sib && sib.classList.contains('nav-item')){ item.parentElement.insertBefore(sib, item); renumberServiceLines(); scheduleSaveNav(); }
-      });
-      mv.querySelector('.nav-del').addEventListener('click', function(e){
-        e.preventDefault(); e.stopPropagation();
-        if (!rearranging) return;
-        var total = document.querySelectorAll('.sidebar .nav-item[data-page]').length;
-        if (total <= 1){ alert('You need at least one page.'); return; }
-        if (!confirm('Delete the "' + getNavLabel(item) + '" page? This cannot be undone.')) return;
-        var pageId = item.getAttribute('data-page');
-        var pageEl = document.getElementById(pageId);
-        var wasActive = pageEl && pageEl.classList.contains('active');
-        item.remove();
-        if (pageEl) pageEl.remove();
-        renumberServiceLines();
-        scheduleSaveNav();
-        scheduleSave();
-        if (wasActive){
-          var fallback = document.querySelector('.sidebar .nav-item[data-page]');
-          if (fallback && showPageRef) showPageRef(fallback.getAttribute('data-page'), {skipStack:true});
-        }
-      });
-    });
-  }
-
-  /* ================= add-a-page ================= */
-  function initAddPage(){
-    var addPageBtn = document.getElementById('addPageBtn');
-    addPageBtn.addEventListener('click', function(){
-      if (!rearranging) return;
-      var title = window.prompt('Name this new page (shown in the left menu):', 'New Page');
-      if (!title || !title.trim()) return;
-      var id = 'custom-' + Date.now();
-      var navItem = document.createElement('div');
-      navItem.className = 'nav-item';
-      navItem.setAttribute('data-page', id);
-      navItem.innerHTML = '<span class="dot"></span>' + escapeHtml(title.trim());
-      addPageBtn.insertAdjacentElement('beforebegin', navItem);
-
-      var section = document.createElement('section');
-      section.className = 'page';
-      section.id = id;
-      section.setAttribute('data-blocks-ready', '1');
-      section.innerHTML = '<div class="eyebrow">Custom Page</div><h1>' + escapeHtml(title.trim()) + '</h1><p class="lead">Click &quot;Edit Text &amp; Links&quot; to write your own introduction here, then use &quot;+ Add Section&quot; below to build out the page.</p>';
-      pageContent.appendChild(section);
-
-      if (navItem.tagName) bindNavClick(navItem);
-      addNavMoveButtons();
-      ensureAddBars();
-      scheduleSaveNav();
-      scheduleSave();
-      if (showPageRef) showPageRef(id);
-    });
-  }
-
-  /* ================= add-a-section: block templates + modal ================= */
-  function logoSlotHTML(){
-    return '<div class="logo-slot"><img style="display:none;"><span class="logo-placeholder">+</span>'
-         + '<input type="file" accept="image/*" class="logo-file-input" style="display:none;">'
-         + '<button type="button" class="logo-del" title="Remove logo">✕</button></div>';
-  }
-  var BLOCK_TEMPLATES = {
-    text: function(){ return '<h2>New Section</h2><p>Click "Edit Text &amp; Links" above, then click here to write your own copy.</p>'; },
-    list: function(){ return '<h2>New List</h2><ul class="feature-list"><li>First point</li><li>Second point</li><li>Third point</li></ul>'; },
-    image: function(){
-      return '<h2>New Image</h2>'
-           + '<div class="image-drop"><div class="image-drop-placeholder">📷 No image yet — click "Upload Image" below</div><img class="block-image" style="display:none;"></div>'
-           + '<div class="image-controls"><button type="button" class="upload-btn img-upload-trigger">⬆ Upload Image</button><input type="file" accept="image/*" class="img-file-input" style="display:none;"></div>'
-           + '<p style="font-size:13px;color:var(--text-soft);margin-top:8px;">Optional caption — edit in "Edit Text &amp; Links" mode.</p>';
-    },
-    logos: function(){
-      var slots = '';
-      for (var i=0;i<4;i++) slots += logoSlotHTML();
-      return '<h2>Client Logos</h2><div class="logo-strip">' + slots + '</div><button type="button" class="upload-btn logo-add-slot" style="margin-top:12px;">+ Add Logo</button>';
-    },
-    stats: function(){
-      return '<h2>Key Numbers</h2><div class="grid grid-4">'
-           + '<div class="card metric-card"><b>—</b><span>Metric one</span></div>'
-           + '<div class="card metric-card"><b>—</b><span>Metric two</span></div>'
-           + '<div class="card metric-card"><b>—</b><span>Metric three</span></div>'
-           + '<div class="card metric-card"><b>—</b><span>Metric four</span></div></div>';
-    },
-    cards: function(){
-      return '<h2>New Cards</h2><div class="grid grid-3">'
-           + '<div class="card"><h3>Card one</h3><p style="font-size:13.5px;color:var(--text-soft)">Description here.</p></div>'
-           + '<div class="card"><h3>Card two</h3><p style="font-size:13.5px;color:var(--text-soft)">Description here.</p></div>'
-           + '<div class="card"><h3>Card three</h3><p style="font-size:13.5px;color:var(--text-soft)">Description here.</p></div></div>';
-    },
-    quote: function(){ return '<h2 class="sec-testimonial">Testimonial</h2><div class="testimonial">"Add your client quote here."<div class="attrib">Name, Title, Company</div></div>'; },
-    button: function(){ return '<h2>Call to Action</h2><a href="https://canda.io/contact/" class="btn-primary" style="display:inline-block">Click Me →</a>'; }
-  };
-  function insertBlock(type){
-    var activePage = document.querySelector('#pageContent > .page.active');
-    if (!activePage || !BLOCK_TEMPLATES[type]) return;
-    var block = document.createElement('div');
-    block.className = 'content-block';
-    var controls = document.createElement('div');
-    controls.className = 'block-controls';
-    controls.innerHTML = blockControlsHTML();
-    block.appendChild(controls);
-    var tmp = document.createElement('div');
-    tmp.innerHTML = BLOCK_TEMPLATES[type]();
-    while (tmp.firstChild) block.appendChild(tmp.firstChild);
-
-    var addBar = activePage.querySelector(':scope > .add-block-bar');
-    if (addBar) activePage.insertBefore(block, addBar); else activePage.appendChild(block);
-
-    addLinkIcons(block);
-    wireImageUploads(block);
-    wireLogoStrip(block);
-    applyEditableAttr(block);
-    scheduleSave();
-    closeBlockModal();
-  }
-  function openBlockModal(){ document.getElementById('blockModalOverlay').classList.add('open'); }
-  function closeBlockModal(){ document.getElementById('blockModalOverlay').classList.remove('open'); }
-  function initBlockModal(){
-    document.getElementById('blockModalOverlay').addEventListener('click', function(e){
-      if (e.target.id === 'blockModalOverlay') closeBlockModal();
-    });
-    document.getElementById('blockModalClose').addEventListener('click', closeBlockModal);
-    document.querySelectorAll('.block-type-btn').forEach(function(btn){
-      btn.addEventListener('click', function(){ insertBlock(btn.getAttribute('data-block-type')); });
-    });
-    pageContent.addEventListener('click', function(e){
-      if (!rearranging) return;
-      if (e.target.closest('.add-block-btn')) openBlockModal();
-    });
-  }
-
-  /* ================= image upload wiring ================= */
-  function wireImageUploads(scope){
-    var root = scope || document;
-    root.querySelectorAll('.img-upload-trigger').forEach(function(btn){
-      if (btn.dataset.wired === '1') return;
-      btn.dataset.wired = '1';
-      btn.addEventListener('click', function(e){
-        e.preventDefault(); e.stopPropagation();
-        var input = btn.parentElement.querySelector('.img-file-input');
-        if (input) input.click();
-      });
-    });
-    root.querySelectorAll('.img-file-input').forEach(function(input){
-      if (input.dataset.wired === '1') return;
-      input.dataset.wired = '1';
-      input.addEventListener('change', function(){
-        var file = input.files && input.files[0];
-        if (!file) return;
-        var reader = new FileReader();
-        reader.onload = function(ev){
-          var block = input.closest('.content-block');
-          var drop = block && block.querySelector('.image-drop');
-          if (!drop) return;
-          var img = drop.querySelector('img.block-image');
-          var placeholder = drop.querySelector('.image-drop-placeholder');
-          img.src = ev.target.result;
-          img.style.display = 'block';
-          if (placeholder) placeholder.style.display = 'none';
-          scheduleSave();
-        };
-        reader.readAsDataURL(file);
-      });
-    });
-  }
-
-  /* ================= client logo strip wiring ================= */
-  function wireLogoSlot(slot){
-    if (slot.dataset.wired === '1') return;
-    slot.dataset.wired = '1';
-    var img = slot.querySelector('img');
-    var placeholder = slot.querySelector('.logo-placeholder');
-    var input = slot.querySelector('.logo-file-input');
-    var delBtn = slot.querySelector('.logo-del');
-    slot.addEventListener('click', function(e){
-      if (e.target === delBtn) return;
-      if (!editing && !rearranging) return;
-      input.click();
-    });
-    input.addEventListener('change', function(){
-      var file = input.files && input.files[0];
-      if (!file) return;
-      var reader = new FileReader();
-      reader.onload = function(ev){ img.src = ev.target.result; img.style.display = 'block'; if (placeholder) placeholder.style.display = 'none'; scheduleSave(); };
-      reader.readAsDataURL(file);
-    });
-    delBtn.addEventListener('click', function(e){
-      e.preventDefault(); e.stopPropagation();
-      if (!rearranging){ img.removeAttribute('src'); img.style.display = 'none'; if (placeholder) placeholder.style.display = 'flex'; scheduleSave(); return; }
-      slot.remove();
-      scheduleSave();
-    });
-  }
-  function wireLogoStrip(scope){
-    var root = scope || document;
-    root.querySelectorAll('.logo-slot').forEach(wireLogoSlot);
-    root.querySelectorAll('.logo-add-slot').forEach(function(btn){
-      if (btn.dataset.wired === '1') return;
-      btn.dataset.wired = '1';
-      btn.addEventListener('click', function(e){
-        e.preventDefault(); e.stopPropagation();
-        var strip = btn.previousElementSibling && btn.previousElementSibling.classList.contains('logo-strip')
-          ? btn.previousElementSibling
-          : btn.closest('.content-block').querySelector('.logo-strip');
-        if (!strip) return;
-        var tmp = document.createElement('div');
-        tmp.innerHTML = logoSlotHTML();
-        var slot = tmp.firstChild;
-        strip.appendChild(slot);
-        wireLogoSlot(slot);
-        scheduleSave();
-      });
-    });
-  }
-
-  /* ================= "Our Expertise" photo card image replacement ================= */
-  function wireExpertiseCards(scope){
-    var root = scope || document;
-    root.querySelectorAll('.expertise-card').forEach(function(card){
-      if (card.dataset.wired === '1') return;
-      card.dataset.wired = '1';
-      var btn = card.querySelector('.ec-upload');
-      var input = card.querySelector('.ec-file-input');
-      if (!btn || !input) return;
-      btn.addEventListener('click', function(e){
-        e.preventDefault(); e.stopPropagation();
-        input.click();
-      });
-      input.addEventListener('click', function(e){ e.stopPropagation(); });
-      input.addEventListener('change', function(){
-        var file = input.files && input.files[0];
-        if (!file) return;
-        var reader = new FileReader();
-        reader.onload = function(ev){
-          card.style.backgroundImage = "url('" + ev.target.result + "')";
-          scheduleSave();
-        };
-        reader.readAsDataURL(file);
-      });
-    });
-  }
-
-  /* ================= style & shape popover ================= */
-  function rgbToHex(rgbStr){
-    if (!rgbStr) return '#ffffff';
-    var m = rgbStr.match(/[\d.]+/g);
-    if (!m) return '#ffffff';
-    return '#' + m.slice(0,3).map(function(n){ var h = Math.round(+n).toString(16); return h.length === 1 ? '0'+h : h; }).join('');
-  }
-  function closeStylePopover(){
-    var existing = document.getElementById('stylePopover');
-    if (existing) existing.remove();
-  }
-  function hasUnderline(cs){
-    var d = cs.textDecorationLine || cs.textDecoration || '';
-    return d.indexOf('underline') !== -1;
-  }
-  function openStylePopover(target, x, y){
-    closeStylePopover();
-    var cs = window.getComputedStyle(target);
-    var pop = document.createElement('div');
-    pop.id = 'stylePopover';
-    pop.className = 'style-popover';
-    var curRadius = parseInt(cs.borderRadius) || 0;
-    var curPadding = parseInt(cs.paddingTop) || 0;
-    var curFontSize = parseInt(cs.fontSize) || 14;
-    var isBold = parseInt(cs.fontWeight) >= 600;
-    var isItalic = cs.fontStyle === 'italic';
-    var isUnderline = hasUnderline(cs);
-    pop.innerHTML =
-      '<div class="sp-row"><label>Text color</label><input type="color" id="spText" value="'+rgbToHex(cs.color)+'"></div>' +
-      '<div class="sp-row"><label>Background</label><input type="color" id="spBg" value="'+rgbToHex(cs.backgroundColor)+'"></div>' +
-      '<div class="sp-row"><label>Font size</label><input type="range" id="spFontSize" min="10" max="48" step="1" value="'+curFontSize+'"></div>' +
-      '<div class="sp-row"><label>Text style</label><div class="sp-text-toggles">' +
-        '<button type="button" id="spBold" class="sp-toggle'+(isBold?' active':'')+'">B</button>' +
-        '<button type="button" id="spItalic" class="sp-toggle'+(isItalic?' active':'')+'">I</button>' +
-        '<button type="button" id="spUnderline" class="sp-toggle'+(isUnderline?' active':'')+'">U</button>' +
-      '</div></div>' +
-      '<div class="sp-row"><label>Roundness</label><input type="range" id="spRadius" min="0" max="32" step="2" value="'+curRadius+'"></div>' +
-      '<div class="sp-row"><label>Padding</label><input type="range" id="spPadding" min="0" max="48" step="2" value="'+curPadding+'"></div>' +
-      '<div class="sp-actions"><button type="button" id="spClear">Clear style</button><button type="button" id="spClose">Close</button></div>';
-    document.body.appendChild(pop);
-    var pw = 230, ph = pop.offsetHeight || 300;
-    var left = Math.min(Math.max(8, x - pw/2), window.innerWidth - pw - 8);
-    var top  = Math.min(Math.max(8, y + 12), window.innerHeight - ph - 8);
-    pop.style.left = left + 'px';
-    pop.style.top = top + 'px';
-
-    document.getElementById('spText').addEventListener('input', function(e){ target.style.color = e.target.value; scheduleSave(); });
-    document.getElementById('spBg').addEventListener('input', function(e){ target.style.backgroundColor = e.target.value; scheduleSave(); });
-    document.getElementById('spFontSize').addEventListener('input', function(e){ target.style.fontSize = e.target.value + 'px'; scheduleSave(); });
-    document.getElementById('spRadius').addEventListener('input', function(e){ target.style.borderRadius = e.target.value + 'px'; scheduleSave(); });
-    document.getElementById('spPadding').addEventListener('input', function(e){ target.style.padding = e.target.value + 'px'; scheduleSave(); });
-
-    var boldBtn = document.getElementById('spBold');
-    boldBtn.addEventListener('click', function(){
-      var currentlyBold = parseInt(window.getComputedStyle(target).fontWeight) >= 600;
-      target.style.fontWeight = currentlyBold ? '400' : '700';
-      boldBtn.classList.toggle('active', !currentlyBold);
-      scheduleSave();
-    });
-    var italicBtn = document.getElementById('spItalic');
-    italicBtn.addEventListener('click', function(){
-      var currentlyItalic = window.getComputedStyle(target).fontStyle === 'italic';
-      target.style.fontStyle = currentlyItalic ? 'normal' : 'italic';
-      italicBtn.classList.toggle('active', !currentlyItalic);
-      scheduleSave();
-    });
-    var underlineBtn = document.getElementById('spUnderline');
-    underlineBtn.addEventListener('click', function(){
-      var currentlyUnderline = hasUnderline(window.getComputedStyle(target));
-      target.style.textDecoration = currentlyUnderline ? 'none' : 'underline';
-      underlineBtn.classList.toggle('active', !currentlyUnderline);
-      scheduleSave();
-    });
-
-    document.getElementById('spClear').addEventListener('click', function(){
-      target.style.removeProperty('color');
-      target.style.removeProperty('background-color');
-      target.style.removeProperty('font-size');
-      target.style.removeProperty('font-weight');
-      target.style.removeProperty('font-style');
-      target.style.removeProperty('text-decoration');
-      target.style.removeProperty('border-radius');
-      target.style.removeProperty('padding');
-      scheduleSave();
-      closeStylePopover();
-    });
-    document.getElementById('spClose').addEventListener('click', closeStylePopover);
-  }
-
-  /* ================= mode switching ================= */
-  function updateModeButtons(){
-    editBtn.textContent = editing ? '✓ Editing — click text to type' : '✏️ Edit Text & Links';
-    editBtn.classList.toggle('on', editing); editBtn.classList.toggle('off', !editing);
-    rearrangeBtn.textContent = rearranging ? '✓ Building — add, delete, reorder' : '🧱 Build Mode';
-    rearrangeBtn.classList.toggle('on', rearranging); rearrangeBtn.classList.toggle('off', !rearranging);
-    styleBtn.textContent = styling ? '✓ Styling — click an element' : '🎨 Style & Shape';
-    styleBtn.classList.toggle('on', styling); styleBtn.classList.toggle('off', !styling);
-  }
-  function setMode(mode){
-    editing = mode === 'edit';
-    rearranging = mode === 'rearrange';
-    styling = mode === 'style';
-    document.body.classList.toggle('edit-mode', editing);
-    document.body.classList.toggle('rearrange-mode', rearranging);
-    document.body.classList.toggle('style-mode', styling);
-    document.querySelectorAll(EDITABLE_SELECTOR).forEach(function(el){
-      el.setAttribute('contenteditable', editing ? 'true' : 'false');
-    });
-    if (!styling) closeStylePopover();
-    updateModeButtons();
-  }
-
-  /* ================= nav routing + back button ================= */
-  var navTitleMap = { book: 'Work with Canda' };
-  var bindNavClick = null;
-
-  function initNav(){
-    var topbarTitle = document.getElementById('topbar-title');
-    var backBtn = document.getElementById('backBtn');
-    document.querySelectorAll('.sidebar .nav-item').forEach(function(el){
-      navTitleMap[el.getAttribute('data-page')] = getNavLabel(el);
-    });
-    var currentId = 'home';
-
-    function showPage(id, opts){
-      opts = opts || {};
-      if (!document.getElementById(id)) return;
-      if (!opts.skipStack && id !== currentId){
-        pageStack.push(currentId);
-        backBtn.disabled = false;
-      }
-      currentId = id;
-      closeStylePopover();
-      document.querySelectorAll('#pageContent > .page').forEach(function(p){ p.classList.toggle('active', p.id === id); });
-      document.querySelectorAll('.sidebar .nav-item').forEach(function(el){
-        el.classList.toggle('active', el.getAttribute('data-page') === id);
-      });
-      if (navTitleMap[id]) topbarTitle.textContent = navTitleMap[id];
-      window.scrollTo({top:0, behavior:'instant'});
-      if (history.pushState) history.pushState(null, '', '#' + id);
-    }
-    showPageRef = showPage;
-
-    bindNavClick = function(el){
-      el.addEventListener('click', function(){
-        if (editing && el.hasAttribute('contenteditable')) return;
-        showPage(el.getAttribute('data-page'));
-      });
-    };
-    document.querySelectorAll('[data-page]').forEach(bindNavClick);
-
-    backBtn.addEventListener('click', function(){
-      if (pageStack.length){
-        var prev = pageStack.pop();
-        showPage(prev, {skipStack:true});
-        backBtn.disabled = pageStack.length === 0;
-      }
-    });
-
-    window.addEventListener('popstate', function(){
-      var id = (location.hash || '').replace('#','');
-      if (id && document.getElementById(id)) showPage(id, {skipStack:true});
-    });
-
-    var initial = (location.hash || '').replace('#','');
-    if (initial && document.getElementById(initial) && initial !== 'home') showPage(initial, {skipStack:true});
-  }
-
-  /* ================= edit text / links ================= */
-  function initEditingControls(){
-    editBtn.addEventListener('click', function(){ setMode(editing ? null : 'edit'); });
-
-    document.addEventListener('focusin', function(e){
-      if (!editing) return;
-      var ph = e.target.closest('.ph');
-      if (ph && ph.getAttribute('contenteditable') === 'true') activatePlaceholder(ph);
-    });
-
-    pageContent.addEventListener('input', scheduleSave);
-
-    pageContent.addEventListener('click', function(e){
-      var icon = e.target.closest('.link-edit-icon');
-      if (icon && editing){
-        e.preventDefault(); e.stopPropagation();
-        var a = icon.previousElementSibling;
-        if (a && a.tagName === 'A'){
-          var current = a.getAttribute('href') || '';
-          var next = window.prompt('Set the destination URL for this link/button:', current);
-          if (next !== null && next.trim()){ a.setAttribute('href', next.trim()); scheduleSave(); }
-        }
-        return;
-      }
-      if (editing){
-        var a2 = e.target.closest('a[href]');
-        if (a2) e.preventDefault();
-      }
-    });
-  }
-
-  /* ================= rearrange ================= */
-  function initRearrangeControls(){
-    rearrangeBtn.addEventListener('click', function(){ setMode(rearranging ? null : 'rearrange'); });
-    pageContent.addEventListener('click', function(e){
-      if (!rearranging) return;
-      var btn = e.target.closest('.block-controls button');
-      if (!btn) return;
-      e.preventDefault(); e.stopPropagation();
-      var block = btn.closest('.content-block');
-      if (!block) return;
-      if (btn.classList.contains('del-block')){
-        if (confirm('Delete this section? This cannot be undone.')){ block.remove(); scheduleSave(); }
-        return;
-      }
-      moveBlock(block, btn.classList.contains('move-up') ? 'up' : 'down');
-    });
-  }
-
-  /* ================= style & shape ================= */
-  function initStyleControls(){
-    styleBtn.addEventListener('click', function(){ setMode(styling ? null : 'style'); });
-    pageContent.addEventListener('click', function(e){
-      if (!styling) return;
-      if (e.target === pageContent) return;
-      e.preventDefault(); e.stopPropagation();
-      openStylePopover(e.target, e.clientX, e.clientY);
-    }, true);
-    document.addEventListener('click', function(e){
-      var pop = document.getElementById('stylePopover');
-      if (pop && !pop.contains(e.target) && !e.target.closest('#pageContent') && e.target.id !== 'styleToggleBtn') closeStylePopover();
-    });
-  }
-
-  /* ================= theme & fonts drawer ================= */
-  function initDesignDrawer(){
-    var designBtn = document.getElementById('designBtn');
-    var drawer = document.getElementById('designDrawer');
-    var overlay = document.getElementById('designOverlay');
-    var closeBtn = document.getElementById('closeDesignBtn');
-    var resetDesignBtn = document.getElementById('resetDesignBtn');
-
-    function openDrawer(){ drawer.classList.add('open'); overlay.classList.add('open'); }
-    function closeDrawer(){ drawer.classList.remove('open'); overlay.classList.remove('open'); }
-
-    designBtn.addEventListener('click', openDrawer);
-    closeBtn.addEventListener('click', closeDrawer);
-    overlay.addEventListener('click', closeDrawer);
-
-    Object.keys(DESIGN_FIELDS).forEach(function(id){
-      document.getElementById(id).addEventListener('input', function(){
-        var root = document.documentElement;
-        root.style.setProperty(DESIGN_FIELDS[id], this.value);
-        if (id === 'colorCoral') root.style.setProperty('--coral-dark', darken(this.value, 25));
-        saveDesign();
-      });
-    });
-
-    document.getElementById('fontSelect').addEventListener('change', function(){
-      document.documentElement.style.setProperty('--font', this.value);
-      ensureFontLoaded(this.value);
-      saveDesign();
-    });
-
-    resetDesignBtn.addEventListener('click', function(){
-      try{ localStorage.removeItem(DESIGN_KEY); }catch(e){}
-      document.documentElement.removeAttribute('style');
-      document.getElementById('colorNavy').value = '#030035';
-      document.getElementById('colorCoral').value = '#FF7282';
-      document.getElementById('colorGreen').value = '#1FAE6E';
-      document.getElementById('colorBg').value = '#F6F6FB';
-      document.getElementById('colorCard').value = '#FFFFFF';
-      document.getElementById('colorText').value = '#1B1B33';
-      document.getElementById('colorTextSoft').value = '#5B5D74';
-      document.getElementById('fontSelect').value = "'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
-    });
-  }
-
-  /* ================= minimal script baked into the client-facing download ================= */
-  var MINIMAL_VIEWER_SCRIPT = [
-    "(function(){",
-    "  var pageStack = [];",
-    "  var pages = document.querySelectorAll('#pageContent > .page');",
-    "  var topbarTitle = document.getElementById('topbar-title');",
-    "  var backBtn = document.getElementById('backBtn');",
-    "  var titleMap = {};",
-    "  document.querySelectorAll('.sidebar .nav-item').forEach(function(el){",
-    "    var t=''; el.childNodes.forEach(function(n){ if(n.nodeType===3) t+=n.textContent; });",
-    "    titleMap[el.getAttribute('data-page')] = t.trim();",
-    "  });",
-    "  titleMap['book']='Work with Canda';",
-    "  var currentId='home';",
-    "  function showPage(id, opts){",
-    "    opts=opts||{};",
-    "    if(!document.getElementById(id)) return;",
-    "    if(!opts.skipStack && id!==currentId){ pageStack.push(currentId); if(backBtn) backBtn.disabled=false; }",
-    "    currentId=id;",
-    "    pages.forEach(function(p){ p.classList.toggle('active', p.id===id); });",
-    "    document.querySelectorAll('.sidebar .nav-item').forEach(function(el){ el.classList.toggle('active', el.getAttribute('data-page')===id); });",
-    "    if(titleMap[id] && topbarTitle) topbarTitle.textContent=titleMap[id];",
-    "    window.scrollTo({top:0, behavior:'instant'});",
-    "    if(history.pushState) history.pushState(null,'','#'+id);",
-    "  }",
-    "  document.querySelectorAll('[data-page]').forEach(function(el){",
-    "    el.addEventListener('click', function(){ showPage(el.getAttribute('data-page')); });",
-    "  });",
-    "  if(backBtn) backBtn.addEventListener('click', function(){ if(pageStack.length){ var p=pageStack.pop(); showPage(p,{skipStack:true}); backBtn.disabled = pageStack.length===0; } });",
-    "  window.addEventListener('popstate', function(){ var id=(location.hash||'').replace('#',''); if(id && document.getElementById(id)) showPage(id,{skipStack:true}); });",
-    "  var initial=(location.hash||'').replace('#','');",
-    "  if(initial && document.getElementById(initial) && initial!=='home') showPage(initial,{skipStack:true});",
-    "})();"
-  ].join('\n');
-
-  function buildCleanClone(){
-    var clone = document.documentElement.cloneNode(true);
-    clone.querySelectorAll('[contenteditable]').forEach(function(el){ el.removeAttribute('contenteditable'); });
-    var body = clone.querySelector('body');
-    if (body) body.classList.remove('edit-mode','rearrange-mode','style-mode');
-    clone.querySelectorAll(
-      '.link-edit-icon, .block-controls, .nav-move-btns, .add-block-bar, #addPageBtn, #blockModalOverlay, ' +
-      '.image-controls, .logo-add-slot, .logo-del, .ec-upload, .ec-file-input, ' +
-      '#editToggleBtn, #rearrangeToggleBtn, #styleToggleBtn, #designBtn, #downloadBtn, #downloadMasterBtn, #resetBtn, #saveStatus, #designDrawer, #designOverlay, #stylePopover'
-    ).forEach(function(el){ el.remove(); });
-    clone.querySelectorAll('.logo-slot').forEach(function(slot){
-      var img = slot.querySelector('img');
-      if (!img || !img.getAttribute('src')) slot.remove();
-    });
-    clone.querySelectorAll('.image-drop').forEach(function(drop){
-      var img = drop.querySelector('img.block-image');
-      if (!img || !img.getAttribute('src')) drop.innerHTML = '<p style="color:var(--text-soft);font-size:13px;padding:20px;">(Image not yet added)</p>';
-    });
-    var cloneScript = clone.querySelector('script');
-    if (cloneScript) cloneScript.textContent = MINIMAL_VIEWER_SCRIPT;
-    return clone;
-  }
-
-  /* ================= download + reset ================= */
-  function downloadHtml(htmlString, filename){
-    var blob = new Blob([htmlString], {type:'text/html'});
-    var a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = filename;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-  }
-  function initDownloadReset(){
-    document.getElementById('downloadMasterBtn').addEventListener('click', function(){
-      // Full, untouched copy -- keeps every toolbar/editing capability intact.
-      // This is your re-editable working file; treat it as the source of truth.
-      var wasEditing = editing, wasRearranging = rearranging, wasStyling = styling;
-      if (wasEditing || wasRearranging || wasStyling) setMode(null);
-      var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
-      downloadHtml(html, 'Canda-GreenTech-Services-Brochure-MASTER.html');
-      if (wasEditing) setMode('edit'); else if (wasRearranging) setMode('rearrange'); else if (wasStyling) setMode('style');
-    });
-
-    document.getElementById('downloadBtn').addEventListener('click', function(){
-      var clone = buildCleanClone();
-      var html = '<!DOCTYPE html>\n' + clone.outerHTML;
-      downloadHtml(html, 'index.html');
-    });
-
-    document.getElementById('resetBtn').addEventListener('click', function(){
-      if (confirm('Reset ALL text edits, layout changes and theme customizations in this browser back to the original brochure? This cannot be undone.')){
-        try{
-          localStorage.removeItem(CONTENT_KEY);
-          localStorage.removeItem(NAV_KEY);
-          localStorage.removeItem(DESIGN_KEY);
-        }catch(e){}
-        location.reload();
-      }
-    });
-  }
-
-  /* ================= boot ================= */
-  pageContent  = document.getElementById('pageContent');
-  navScroll    = document.querySelector('.nav-scroll');
-  saveStatus   = document.getElementById('saveStatus');
-  editBtn      = document.getElementById('editToggleBtn');
-  rearrangeBtn = document.getElementById('rearrangeToggleBtn');
-  styleBtn     = document.getElementById('styleToggleBtn');
-
-  restoreDesign();
-  restoreNav();
-  restoreContent();
-  ensureBlocks();
-  ensureAddBars();
-  addLinkIcons(document);
-  wireImageUploads(document);
-  wireLogoStrip(document);
-  wireExpertiseCards(document);
-  addNavMoveButtons();
-  renumberServiceLines();
-  initNav();
-  initAddPage();
-  initEditingControls();
-  initRearrangeControls();
-  initBlockModal();
-  initStyleControls();
-  initDesignDrawer();
-  initDownloadReset();
-})();
-</script>
-</body>
-</html>
+</body></html>

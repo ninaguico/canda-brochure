@@ -214,6 +214,25 @@ p.lead{ font-size:16.5px; color:var(--text-soft); max-width:680px; margin-bottom
 .hero p.lead{ color:rgba(255,255,255,0.75); max-width:600px; }
 .hero-stats{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:26px; }
 @media(max-width:700px){ .hero-stats{ grid-template-columns:repeat(2,1fr); } }
+
+/* ---------- Headline Numbers band (Results page) ---------- */
+.headline-band{
+  background: linear-gradient(120deg, var(--navy) 0%, #131368 100%);
+  border-radius:20px; padding:38px 24px; margin-top:16px;
+  display:grid; grid-template-columns:repeat(4,1fr); gap:0;
+}
+.headline-stat{ text-align:center; padding:0 18px; border-right:1px solid rgba(255,255,255,0.15); }
+.headline-stat:last-child{ border-right:none; }
+.headline-stat b{ display:block; font-size:38px; font-weight:800; margin-bottom:8px; line-height:1; }
+.headline-stat span{ font-size:12.5px; color:rgba(255,255,255,0.68); line-height:1.4; }
+.headline-stat.hs-1 b{ color:#FF7282; }
+.headline-stat.hs-2 b{ color:#9B90F7; }
+.headline-stat.hs-3 b{ color:#5FDFCF; }
+.headline-stat.hs-4 b{ color:#5AA9E6; }
+@media(max-width:700px){
+  .headline-band{ grid-template-columns:repeat(2,1fr); gap:24px 14px; padding:28px 18px; }
+  .headline-stat{ border-right:none; padding:0; }
+}
 .hero-stat b{ display:block; font-size:22px; font-weight:800; }
 .hero-stat span{ font-size:12.5px; color:rgba(255,255,255,0.6); }
 .hero-actions{ margin-top:28px; display:flex; gap:12px; }
@@ -1104,9 +1123,6 @@ body.rearrange-mode .logo-slot .logo-del, body.edit-mode .logo-slot .logo-del{ d
             <div class="cc-tag">Construction / Carbon Data</div>
             <h3>Qflow</h3>
             <p style="font-size:13.5px;color:var(--text-soft)">The on-site truth captured in seconds: a construction materials, waste and carbon data platform.</p>
-            <div class="case-metrics">
-              <div class="ph" style="flex:1"><span class="ph-tag">Placeholder</span><br>Add roles filled, time-to-hire, or £ saved.</div>
-            </div>
             <div class="testimonial" style="font-size:13px;margin:12px 0;">"Our founding team contained no one from a talent background. Louis helped us understand how to approach hiring in our market considering our budget constraints. The data he brought to every conversation completely changed how we thought about hiring and building our team."<div class="attrib" style="font-size:12.5px;">Brittany Harris &mdash; CEO @ Qflow</div></div>
             <a class="case-link" href="https://canda.io/success-stories/qflow/" target="_blank" rel="noopener">Read full case study ↗</a>
           </div>
@@ -1116,9 +1132,6 @@ body.rearrange-mode .logo-slot .logo-del, body.edit-mode .logo-slot .logo-del{ d
             <div class="cc-tag">Consumer / Utilities</div>
             <h3>Utility Warehouse</h3>
             <p style="font-size:13.5px;color:var(--text-soft)">Helping people stop wasting time and money.</p>
-            <div class="case-metrics">
-              <div class="ph" style="flex:1"><span class="ph-tag">Placeholder</span><br>Add roles filled, time-to-hire, or £ saved.</div>
-            </div>
             <div class="testimonial" style="font-size:13px;margin:12px 0;">"We needed help getting our vacancy in front of the right people and filtering out the noise — Canda delivered on both. It saved us a huge amount of time we'd normally lose sifting through unsuitable applications."<div class="attrib" style="font-size:12.5px;">Ketna &mdash; Head of Talent @ UW</div></div>
             <a class="case-link" href="https://canda.io/success-stories/utility-warehouse/" target="_blank" rel="noopener">Read full case study ↗</a>
           </div>
@@ -1128,9 +1141,6 @@ body.rearrange-mode .logo-slot .logo-del, body.edit-mode .logo-slot .logo-del{ d
             <div class="cc-tag">Climate Action</div>
             <h3>Ecologi</h3>
             <p style="font-size:13.5px;color:var(--text-soft)">Climate action at your fingertips.</p>
-            <div class="case-metrics">
-              <div class="ph" style="flex:1"><span class="ph-tag">Placeholder</span><br>Add roles filled, time-to-hire, or £ saved.</div>
-            </div>
             <div class="testimonial" style="font-size:13px;margin:12px 0;">"We didn't want another recruiter working our roles alongside twenty other clients — we wanted someone who actually owned the process. It felt like having an internal hire dedicated to our roles, not an external supplier ticking boxes."<div class="attrib" style="font-size:12.5px;">Paola Tartaglione &mdash; Head of People @ Ecologi</div></div>
             <a class="case-link" href="https://canda.io/success-stories/ecologi/" target="_blank" rel="noopener">Read full case study ↗</a>
           </div>
@@ -1138,13 +1148,12 @@ body.rearrange-mode .logo-slot .logo-del, body.edit-mode .logo-slot .logo-del{ d
       </div>
 
       <h2>Headline Numbers</h2>
-      <div class="grid grid-4">
-        <div class="card metric-card ph"><span class="ph-tag">Placeholder</span><br><b>—</b><span>Avg. hires / customer / month</span></div>
-        <div class="card metric-card ph"><span class="ph-tag">Placeholder</span><br><b>—</b><span>Interview : Hire ratio</span></div>
-        <div class="card metric-card ph"><span class="ph-tag">Placeholder</span><br><b>—</b><span>Avg. monthly £ saved</span></div>
-        <div class="card metric-card ph"><span class="ph-tag">Placeholder</span><br><b>—</b><span>Candidate NPS</span></div>
+      <div class="headline-band">
+        <div class="headline-stat hs-1"><b>6.2</b><span>Average hires per customer per month</span></div>
+        <div class="headline-stat hs-2"><b>111</b><span>Most hires per customer in a 12-month period</span></div>
+        <div class="headline-stat hs-3"><b>5.6</b><span>Interview : Hire ratio</span></div>
+        <div class="headline-stat hs-4"><b>46k</b><span>Average monthly cost saving (£)</span></div>
       </div>
-      <p style="font-size:12.5px;color:var(--text-soft);margin-top:10px;">Canda publishes these live on canda.io/success-stories — drop in the current figures before sending.</p>
     </section>
 
     <!-- ===================== ABOUT ===================== -->
@@ -1199,7 +1208,7 @@ body.rearrange-mode .logo-slot .logo-del, body.edit-mode .logo-slot .logo-del{ d
 
   var RELATIVE_EDITABLE_SELECTOR = [
     'h1','h2','h3','p','li','a[href]','.badge','.amount','.desc','.tile-num','.ph','.cc-tag',
-    '.hero-stat b','.hero-stat span','.metric-card b','.metric-card span','.pace-letter','.eyebrow','.ec-label'
+    '.hero-stat b','.hero-stat span','.metric-card b','.metric-card span','.pace-letter','.eyebrow','.ec-label','.headline-stat b','.headline-stat span'
   ].join(', ');
   var EDITABLE_SELECTOR = RELATIVE_EDITABLE_SELECTOR.split(', ').map(function(s){ return '#pageContent ' + s; }).join(', ');
 
